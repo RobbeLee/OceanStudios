@@ -1,0 +1,5 @@
+/private/includes/config.php
+*.map
+*.scss
+*.sass
+.DS_store
