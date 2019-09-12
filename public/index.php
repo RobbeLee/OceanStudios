@@ -20,6 +20,7 @@ $router->setBasePath('/public');
 
 // User pages
 $router->map('GET', '/', 'HomeController#index', 'Home page');
+$router->map('GET', '/portfolio', 'HomeController#portfolio', 'Portfolio page');
 
 $match = $router->match();
 
