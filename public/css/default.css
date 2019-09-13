@@ -408,6 +408,13 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__logo {
+  max-height: 70px;
 }
 
 .nav .hamburger {
@@ -434,5 +441,25 @@ p {
   height: 4px;
   background: #000;
   border-radius: 8px;
+}
+
+.nav .mobile-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--mobile-nav-bg);
 }
 /*# sourceMappingURL=default.css.map */
