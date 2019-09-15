@@ -342,6 +342,13 @@ template {
   display: none;
 }
 
+html {
+  --background: #fafafa;
+  --text-color: #111;
+  --link: #000;
+  --link-active: #219A94;
+}
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -352,6 +359,7 @@ template {
 
 html {
   font-size: 14px;
+  font-weight: 300;
 }
 
 @media (min-width: 900px) {
@@ -362,7 +370,7 @@ html {
 
 html, body {
   width: 100%;
-  background: var(--bg);
+  background: var(--background);
   color: var(--text-color);
 }
 
@@ -388,14 +396,20 @@ p {
 }
 
 .nav {
+  --mobile-nav-bg: rgba(255,255,255,.5);
+  --bg: transparent;
+  --nav-link: #fff;
+}
+
+.nav {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
-  height: 100px;
-  background: transparent;
-  padding: 0 40px;
+  height: 120px;
+  background: var(--bg);
+  padding: 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -411,13 +425,64 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: background 200ms ease, height 200ms ease, -webkit-box-shadow 200ms ease;
+  transition: background 200ms ease, height 200ms ease, -webkit-box-shadow 200ms ease;
+  transition: background 200ms ease, height 200ms ease, box-shadow 200ms ease;
+  transition: background 200ms ease, height 200ms ease, box-shadow 200ms ease, -webkit-box-shadow 200ms ease;
 }
 
 .nav__logo {
-  max-height: 70px;
+  width: auto;
+  height: 70px;
+}
+
+.nav__link {
+  position: relative;
+  display: none;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  color: var(--nav-link);
+  padding: 10px;
+  margin: 5px;
+  font-weight: 500;
+  -webkit-transition: color 200ms ease;
+  transition: color 200ms ease;
+}
+
+.nav__link::after, .nav__link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  background: var(--nav-link);
+  width: 51%;
+  height: 1px;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transition: -webkit-transform 200ms ease;
+  transition: -webkit-transform 200ms ease;
+  transition: transform 200ms ease;
+  transition: transform 200ms ease, -webkit-transform 200ms ease;
+}
+
+.nav__link::after {
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  left: 0;
+}
+
+.nav__link::before {
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  right: 0;
+}
+
+.nav__link:hover::before, .nav__link:hover::after, .nav__link:focus::before, .nav__link:focus::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .nav .hamburger {
+  z-index: 90;
   width: 40px;
   height: 40px;
   position: relative;
@@ -434,16 +499,30 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .nav .hamburger .line {
   width: 100%;
-  height: 4px;
-  background: #000;
+  height: 2px;
+  background: var(--nav-link);
   border-radius: 8px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: opacity 250ms ease, -webkit-transform 250ms ease;
+  transition: opacity 250ms ease, -webkit-transform 250ms ease;
+  transition: transform 250ms ease, opacity 250ms ease;
+  transition: transform 250ms ease, opacity 250ms ease, -webkit-transform 250ms ease;
 }
 
 .nav .mobile-nav {
+  -webkit-transform: translateX(-110vw);
+          transform: translateX(-110vw);
+  -webkit-transition: -webkit-transform 250ms ease;
+  transition: -webkit-transform 250ms ease;
+  transition: transform 250ms ease;
+  transition: transform 250ms ease, -webkit-transform 250ms ease;
+  z-index: 50;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -453,6 +532,10 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: absolute;
   top: 0;
   left: 0;
@@ -461,5 +544,65 @@ p {
   width: 100vw;
   height: 100vh;
   background: var(--mobile-nav-bg);
+}
+
+.nav .mobile-nav__link {
+  font-size: 2.4rem;
+  text-transform: capitalize;
+  color: #000;
+  padding: 10px;
+  margin: 5px;
+}
+
+.nav #hamburger:checked ~ .mobile-nav {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.nav #hamburger:checked ~ .hamburger .line1 {
+  -webkit-transform: translate(6px, -3px) rotate(45deg);
+          transform: translate(6px, -3px) rotate(45deg);
+}
+
+.nav #hamburger:checked ~ .hamburger .line3 {
+  -webkit-transform: translate(6px, 4px) rotate(-45deg);
+          transform: translate(6px, 4px) rotate(-45deg);
+}
+
+.nav #hamburger:checked ~ .hamburger .line2 {
+  -webkit-transform: translateX(25px);
+          transform: translateX(25px);
+  opacity: 0;
+}
+
+.nav-scroll {
+  -webkit-box-shadow: 0 3px 8px -7px #000;
+          box-shadow: 0 3px 8px -7px #000;
+  height: 100px;
+}
+
+.nav-scroll {
+  --bg: #fff;
+  --nav-link: #000;
+}
+
+@media (min-width: 320px) {
+  .nav {
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 740px) {
+  .nav {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .nav .hamburger {
+    display: none;
+  }
+  .nav__link {
+    display: block;
+  }
 }
 /*# sourceMappingURL=default.css.map */
