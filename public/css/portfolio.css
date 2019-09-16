@@ -1,0 +1,9 @@
+@import 'default.css';
+
+/* Corrects the placement of the main so its under the nav */
+main{
+    margin-top: 8.5rem;
+}
+
+.main__project--blauw{
+}
