@@ -10,6 +10,6 @@ class HomeController {
 	
 	public function portfolio() {
 		$template_engine = get_template_engine();
-		echo $template_engine->render('portofolio');
+		echo $template_engine->render('portfolio');
 	}
 }

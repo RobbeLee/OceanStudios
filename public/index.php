@@ -22,6 +22,11 @@ $router->setBasePath('/public');
 $router->map('GET', '/', 'HomeController#index', 'Home page');
 $router->map('GET', '/portfolio', 'HomeController#portfolio', 'Portfolio page');
 
+// Web shop
+$router->map('GET', '/shop', 'ShopController#index', 'Webshop Index');
+$router->map('GET', '/shop/cart', 'ShopController#cart', 'Webshop Cart');
+$router->map('GET', '/shop/item/[i:id]', 'ShopController#item', 'Webshop Item');
+
 $match = $router->match();
 
 
