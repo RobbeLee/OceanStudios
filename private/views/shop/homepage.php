@@ -13,91 +13,89 @@ Shop | Ocean Studios
         <h1 class="header__title">Check onze <span class="header__title--bold">collectie</span></h1>
     </div>
 </header>
-<div class="shirts">
-    <h2 class="title">T-shirts</h2>
-    <div class="items">
-        <div class="item">
-            <img src="https://via.placeholder.com/200x400" alt="weg, gone, loesoe">
-            <div class="item__body">
-                <div class="item__info">
-                    <h3 class="item__title">Ocean T-shirt</h3>
-                    <span class="item__price">€35,00</span>
-                    <select class="item__amount" name="" id="">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                    <select class="item__size" name="" id="">
-                        <option value="xs">Extra small</option>
-                        <option value="s">Small</option>
-                        <option value="m">Medium</option>
-                        <option value="l">Large</option>
-                        <option value="xl">Extra large</option>
-                    </select>
-                </div>
-                <div class="item__btn-container">
-                    <button class="item__btn">Bestel nu</button>
-                </div>
+<div class="items shirts">
+    <h2 class="title"> <img src="./img/swoosh.png" alt="loes" class="title__img"> T-shirts</h2>
+    <div class="item">
+        <img src="https://via.placeholder.com/200x400" alt="weg, gone, loesoe">
+        <div class="item__body">
+            <div class="item__info">
+                <h3 class="item__title">Ocean T-shirt</h3>
+                <span class="item__price">€35,00</span>
+                <select class="item__amount" name="" id="">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <select class="item__size" name="" id="">
+                    <option value="xs">Extra small</option>
+                    <option value="s">Small</option>
+                    <option value="m">Medium</option>
+                    <option value="l">Large</option>
+                    <option value="xl">Extra large</option>
+                </select>
+            </div>
+            <div class="item__btn-container">
+                <button class="item__btn"><img src="./img/swoosh.png" alt="loes" class="item__btn--img"> Bestel nu</button>
             </div>
         </div>
-        <div class="item">
-            <img src="https://via.placeholder.com/200x400" alt="weg, gone, loesoe">
-            <div class="item__body">
-                <div class="item__info">
-                    <h3 class="item__title">Ocean T-shirt</h3>
-                    <span class="item__price">€35,00</span>
-                    <select class="item__amount" name="" id="">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                    <select class="item__size" name="" id="">
-                        <option value="xs">Extra small</option>
-                        <option value="s">Small</option>
-                        <option value="m">Medium</option>
-                        <option value="l">Large</option>
-                        <option value="xl">Extra large</option>
-                    </select>
-                </div>
-                <div class="item__btn-container">
-                    <button class="item__btn">Bestel nu</button>
-                </div>
+    </div>
+    <div class="item">
+        <img src="https://via.placeholder.com/200x400" alt="weg, gone, loesoe">
+        <div class="item__body">
+            <div class="item__info">
+                <h3 class="item__title">Ocean T-shirt</h3>
+                <span class="item__price">€35,00</span>
+                <select class="item__amount" name="" id="">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <select class="item__size" name="" id="">
+                    <option value="xs">Extra small</option>
+                    <option value="s">Small</option>
+                    <option value="m">Medium</option>
+                    <option value="l">Large</option>
+                    <option value="xl">Extra large</option>
+                </select>
+            </div>
+            <div class="item__btn-container">
+                <button class="item__btn" ><img src="./img/swoosh.png" alt="loes" class="item__btn--img">Bestel nu</button>
             </div>
         </div>
-        <div class="item">
-            <img src="https://via.placeholder.com/200x400" alt="weg, gone, loesoe">
-            <div class="item__body">
-                <div class="item__info">
-                    <h3 class="item__title">Ocean T-shirt</h3>
-                    <span class="item__price">€35,00</span>
-                    <select class="item__amount" name="" id="">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                    <select class="item__size" name="" id="">
-                        <option value="xs">Extra small</option>
-                        <option value="s">Small</option>
-                        <option value="m">Medium</option>
-                        <option value="l">Large</option>
-                        <option value="xl">Extra large</option>
-                    </select>
-                </div>
-                <div class="item__btn-container">
-                    <button class="item__btn">Bestel nu</button>
-                </div>
+    </div>
+    <div class="item">
+        <img src="https://via.placeholder.com/200x400" alt="weg, gone, loesoe">
+        <div class="item__body">
+            <div class="item__info">
+                <h3 class="item__title">Ocean T-shirt</h3>
+                <span class="item__price">€35,00</span>
+                <select class="item__amount" name="" id="">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <select class="item__size" name="" id="">
+                    <option value="xs">Extra small</option>
+                    <option value="s">Small</option>
+                    <option value="m">Medium</option>
+                    <option value="l">Large</option>
+                    <option value="xl">Extra large</option>
+                </select>
+            </div>
+            <div class="item__btn-container">
+                <button class="item__btn"><img src="./img/swoosh.png" alt="loes" class="item__btn--img">Bestel nu</button>
             </div>
         </div>
     </div>
 </div>
-<div class="sokken">
-    <h2 class="title">Sokken</h2>
+<div class="items sokken">
+    <h2 class="title"><img src="./img/swoosh.png" alt="loes" class="title__img">Sokken</h2>
     <div class="item">
         <img src="https://via.placeholder.com/200x400" alt="weg, gone, loesoe">
         <div class="item__body">
@@ -113,7 +111,7 @@ Shop | Ocean Studios
                 </select>
             </div>
             <div class="item__btn-container">
-                <button class="item__btn">Bestel nu</button>
+                <button class="item__btn"><img src="./img/swoosh.png" alt="loes" class="item__btn--img">Bestel nu</button>
             </div>
         </div>
     </div>
@@ -132,7 +130,7 @@ Shop | Ocean Studios
                 </select>
             </div>
             <div class="item__btn-container">
-                <button class="item__btn">Bestel nu</button>
+                <button class="item__btn"><img src="./img/swoosh.png" alt="loes" class="item__btn--img">Bestel nu</button>
             </div>
         </div>
     </div>
@@ -151,7 +149,7 @@ Shop | Ocean Studios
                 </select>
             </div>
             <div class="item__btn-container">
-                <button class="item__btn">Bestel nu</button>
+                <button class="item__btn"><img src="./img/swoosh.png" alt="loes" class="item__btn--img">Bestel nu</button>
             </div>
         </div>
     </div>

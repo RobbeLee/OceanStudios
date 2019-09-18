@@ -28,3 +28,43 @@ header {
             font-weight: 800;
             font-style: italic;
         }
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    .title__img {
+        height: 50px;
+        width: 50px;
+    }
+
+.items {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: #fff;
+    padding: 10vw;
+}
+    .item {
+        background-color: #fff;
+        width: 90vw;
+        box-shadow: 0 0 0 10px #219A94;
+        margin: 25px 0;
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .item__price {
+        padding-right: 15px;
+    }
+    .item__size {
+        margin-left: 15px;
+    }
+    .item__btn {
+        color: #219A94;
+    }
+        .item__btn--img {
+            width: 25px;
+            height: 25px;
+        }
