@@ -3,3 +3,5 @@
 *.scss
 *.sass
 .DS_store
+private/._website.xd
+public/img/._oceanbillboard.jpg
