@@ -55,13 +55,55 @@ header {
         flex-direction: column;
     }
 
+    .item__info {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 100px;
+        padding: 10px;
+    }
+
+    .item__title {
+        width: calc(100%/2);
+        font-weight: 300;
+        font-size: 1.25rem;
+    }
+
     .item__price {
-        padding-right: 15px;
+        text-align: right;
+        width: calc(100%/2);
+        font-weight: 600;
+        font-size: 1.25rem;
     }
-    .item__size {
-        margin-left: 15px;
+
+    .select-container {
+        position: relative;
+        display: flex;
+        align-items: center;
     }
+
+    .select-container svg {
+        position: absolute;
+        right: 5px;
+        width: 20px;
+        height: 10px;
+        fill: #219A94;
+        pointer-events: none;
+    }
+
+    .item__size, .item__amount {
+        width: 60px;
+        height: 30px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border: 2px solid #219A94;
+        padding-left: 5px;
+    }
+
     .item__btn {
+        width: calc(100%/3);
         color: #219A94;
     }
         .item__btn--img {
