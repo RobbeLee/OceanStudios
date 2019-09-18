@@ -8,9 +8,11 @@
 Shop | Ocean Studios
 <?php $this->stop('page_title') ?>
 
-<div class="header">
-    
-</div>
+<header class="header">
+    <div class="header__body">
+        <h1 class="header__title">Check onze <span class="header__title--bold">collectie</span></h1>
+    </div>
+</header>
 <div class="shirts">
     <h2 class="title">T-shirts</h2>
     <div class="items">

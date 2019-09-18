@@ -32,6 +32,6 @@
             <?=$this->section('content')?>
         </main>
         <footer class="footer"></footer>
-        <script src="<?php echo url('js/nav.js') ?>"></script>
+        <script src="<?php echo url('OceanStudios/public/js/nav.js') ?>"></script>
     </body>
 </html>
