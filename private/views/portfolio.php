@@ -20,20 +20,23 @@ Portfolio | Ocean Studios
 <!-- Dit komt in .main te staan -->
 
 <div class="main__header">
-    <div class="main__blauw">
-        <div class="main__blauw--img">
+    <div class="main__header--content">
 
-        </div>
-        <div class="main__blauw--content">
-
-        </div>
     </div>
-    <div class="main__wit">
-        <div class="main__wit--img">
+</div>
+<div class="main__blauw">
+    <div class="main__blauw--img">
 
-        </div>
-        <div class="main__wit--content">
+    </div>
+    <div class="main__blauw--content">
 
-        </div>
+    </div>
+</div>
+<div class="main__wit">
+    <div class="main__wit--img">
+
+    </div>
+    <div class="main__wit--content">
+
     </div>
 </div>

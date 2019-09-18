@@ -7,11 +7,11 @@ require '../private/includes/AltoRouter.php';
  * Verder willen we nog wat andere zaken instellen en goed zetten
  * Dit staat in het bestand private/includes/init.php
  */
-$CONFIG = require '../private/includes/config.php';
+$CONFIG = require '../private/includes/config.example.php';
 require '../private/includes/init.php';
 $router = new AltoRouter();
 
-$router->setBasePath('/public');
+$router->setBasePath('/OceanStudios/public');
 /**
  * Hier stellen we de juiste "routes" in voor onze website
  * We vertellen de router welke url naar welk stukje code (de controller) moet worden doorgestuuurd.
