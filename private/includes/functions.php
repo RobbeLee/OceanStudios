@@ -33,7 +33,7 @@ function base_url() {
     $port = $_SERVER['SERVER_PORT'];
     $disp_port = (($protocol === 'http' && $port === 80) || ($protocol === 'https' && $port === 443)) ? '' : ":$port";
     // put em all together to get the complete base URL
-    $url = "${protocol}://${domain}/";
+    $url = "${protocol}://${domain}:${port}/";
     return $url;
 }
 
