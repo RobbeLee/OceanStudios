@@ -1,6 +1,6 @@
 const nav = document.querySelector('.nav'),
-	  header = document.querySelector('.top-el'),
-	  navObserver = new IntersectionObserver(updateNav, {rootMargin: "-99% 0px 0px 0px"})
+	  header = document.querySelector('header'),
+	  navObserver = new IntersectionObserver(updateNav, {rootMargin: "-60% 0px 0px 0px"})
 
 function updateNav(entries) {
 	entries.forEach(entry => {
