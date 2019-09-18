@@ -1,1 +1,90 @@
 @import 'default.css';
+
+/* VARS */
+:root {
+    --Main-White-: #ffffff;
+    --Dark-SeaGreen-: #379A90;
+    --Dark-Black-: #101010;
+    --Light-SeaGreen-: #219A94;
+    --Light-Black-: #101010;
+}
+main {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+
+}
+
+/* ----------------------   Banner Start    ---------------------- */
+header {
+    width: 100%;
+    height: 60vh;
+    background: url(../img/oceanbillboard.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+    .header__body {
+    padding: 10px 60px 10px 20px;
+    background: #fff;
+    margin-bottom: 50px;
+}
+    .header__title {
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+    .header__title--bold {
+        font-weight: 800;
+        font-style: italic;
+    }
+/* ----------------------   Banner End */
+
+/* ----------------------   Aboutus Start    ----------------------  */
+.aboutus__main {
+
+}
+    .aboutus__main--content {}
+    .aboutus__main--h2 {}
+    .aboutus__main--section-left {}
+/* ----------------------   Aboutus End    ----------------------  */
+
+/* ----------------------   intermission 1 Start    ---------------------- */
+.intermission__main {
+
+}
+    .intermission__main--content {}
+/*  ----------------------   intermission 1 End    ---------------------- */
+
+/*  ----------------------   Ourmission Start    ---------------------- */
+.ourmission__main {
+
+}
+    .ourmission__main--content {}
+    .ourmission__main--section-left {}
+        .ourmission__main--img-left {}
+        .ourmission__main--p {}
+
+    .ourmission__main--section-right {}
+        .ourmission__main--img-right{}
+/*  ----------------------   Ourmission End    ---------------------- */
+
+/*  ----------------------   intermission 2  Start    ---------------------- */
+.intermission__main-2 {
+
+}
+.intermission__main-2--content {}
+/*  ----------------------   intermission 2  End    ---------------------- */
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (min-width: 1080px) {
+
+}

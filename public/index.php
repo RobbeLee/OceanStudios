@@ -11,7 +11,7 @@ $CONFIG = require '../private/includes/config.php';
 require '../private/includes/init.php';
 $router = new AltoRouter();
 
-$router->setBasePath('/OceanStudios/public');
+$router->setBasePath('/project/OceanStudios/public');
 /**
  * Hier stellen we de juiste "routes" in voor onze website
  * We vertellen de router welke url naar welk stukje code (de controller) moet worden doorgestuuurd.

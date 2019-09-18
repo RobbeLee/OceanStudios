@@ -7,3 +7,6 @@ private/._website.xd
 public/img/._oceanbillboard.jpg
 public/img/._swoosh.png
 public/img/._oceanbillboard@2x.jpg
+.idea/workspace.xml
+*.xml
+*.iml
