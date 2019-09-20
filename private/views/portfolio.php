@@ -18,23 +18,23 @@ Portfolio | Ocean Studios
 
 <!-- Hier komt de html code -->
 <!-- Dit komt in .main te staan -->
-
-<div class="main__header">
-    <div class="main__header--content">
-
+<header class="header">
+    <div class="header__body">
+        <h1 class="header__title">Onze <span class="header__title--bold">Projecten</span></h1>
     </div>
-</div>
+</header>
+
 <div class="main__blauw">
     <div class="main__blauw--img">
-
+        <img src="../../public/img/OceanMobile.jpg" alt="">
     </div>
     <div class="main__blauw--content">
-
+        <p>DIT IS CONTENT</p>
     </div>
 </div>
 <div class="main__wit">
     <div class="main__wit--img">
-
+        <img src="../../public/img/OceanMobile.jpg" alt="">
     </div>
     <div class="main__wit--content">
 
