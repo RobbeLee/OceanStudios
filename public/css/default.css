@@ -396,7 +396,7 @@ p {
 }
 
 .nav {
-  --mobile-nav-bg: rgba(255,255,255,.5);
+  --mobile-nav-bg: rgba(255,255,255,.8);
   --bg: transparent;
   --nav-link: #fff;
 }
