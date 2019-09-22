@@ -55,6 +55,16 @@ header {
         flex-direction: column;
     }
 
+    .item__img {
+        object-fit: cover;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        max-height: 100%;
+        max-width: 100%;
+    }
+
     .item__info {
         display: flex;
         flex-flow: row wrap;
@@ -83,14 +93,14 @@ header {
         align-items: center;
     }
 
-    .select-container svg {
-        position: absolute;
-        right: 5px;
-        width: 20px;
-        height: 10px;
-        fill: #219A94;
-        pointer-events: none;
-    }
+        .select-container svg {
+            position: absolute;
+            right: 5px;
+            width: 20px;
+            height: 10px;
+            fill: #219A94;
+            pointer-events: none;
+        }
 
     .item__size, .item__amount {
         width: 60px;
