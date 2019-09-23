@@ -59,5 +59,5 @@ if (is_array($match) && is_callable($match['target'])) {
 } else {
     // Er is geen match dus een 404 pagina
     header($_SERVER["SERVER_PROTOCOL"] . ' 404 Not Found');
-    echo '404: Onbekende pagina';
+    require '404.html';
 }
