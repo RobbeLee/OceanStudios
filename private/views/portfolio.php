@@ -24,19 +24,79 @@ Portfolio | Ocean Studios
     </div>
 </header>
 
+
 <div class="main__blauw">
     <div class="main__blauw--img">
+        <!--   Place here a screenshot of your website    -->
         <img src="../../public/img/OceanMobile.jpg" alt="">
     </div>
     <div class="main__blauw--content">
-        <p>DIT IS CONTENT</p>
+        <!--    Your name    -->
+        <h2>Example Examples</h2>
+
+        <!--    Link to your website    -->
+        <a href="example.nl">example</a>
+        <br>
+        <br>
+
+        <!--    Here you explain or give a small introduction of your project    -->
+        <p>example of a example of a text</p>
     </div>
 </div>
+
 <div class="main__wit">
     <div class="main__wit--img">
+        <!--   Place here a screenshot of your website    -->
         <img src="../../public/img/OceanMobile.jpg" alt="">
     </div>
     <div class="main__wit--content">
+        <!--    Your name    -->
+        <h2>Example Examples</h2>
 
+        <!--  Link to your website  -->
+        <a href="example.nl">example</a>
+        <br>
+        <br>
+
+        <!--    Here you explain or give a small introduction of your project    -->
+        <p>example of a example of a text</p>
+    </div>
+</div>
+
+<div class="main__blauw">
+    <div class="main__blauw--img">
+        <!--   Place here a screenshot of your website    -->
+        <img src="../../public/img/OceanMobile.jpg" alt="">
+    </div>
+    <div class="main__blauw--content">
+        <!--    Your name    -->
+        <h2>Example Examples</h2>
+
+        <!--  Link to your website  -->
+        <a href="example.nl">example</a>
+        <br>
+        <br>
+
+        <!--    Here you explain or give a small introduction of your project    -->
+        <p>example of a example of a text</p>
+    </div>
+</div>
+
+<div class="main__wit">
+    <div class="main__wit--img">
+        <!--   Place here a screenshot of your website    -->
+        <img src="../../public/img/OceanMobile.jpg" alt="">
+    </div>
+    <div class="main__wit--content">
+        <!--    Your name    -->
+        <h2>Example Examples</h2>
+
+        <!--  Link to your website  -->
+        <a href="example.nl">example</a>
+        <br>
+        <br>
+
+        <!--    Here you explain or give a small introduction of your project    -->
+        <p>example of a example of a text</p>
     </div>
 </div>

@@ -13,9 +13,20 @@ header {
     justify-content: flex-end;
     align-items: flex-end;
 }
+
+/* Making the font readable on mobile*/
+p{
+    font-weight: 500;
+    font-size: 18px;
+}
+a{
+    font-weight: bold;
+    font-size: 16px;
+}
+
 /* Making so that the nav comes above the divs at all times*/
 .nav{
-    z-index: 3;
+    z-index: 4;
 }
 .header__body {
     padding: 0 10px 0 20px;
@@ -88,7 +99,7 @@ header {
         right: 0;
         bottom: 0;
         left: 0;
-        z-index: -2;
+        z-index: 2;
         transform-origin: top left;
         transform: skewY(5deg);}
         .main__wit--img{
@@ -100,13 +111,13 @@ header {
             background-position: center;
             background-size: cover;
             margin: auto;
-            z-index: 2;}
+            z-index: 3;}
         .main__wit--content{
             margin: auto;
             position: relative;
             width: 290px;
             height: 100px;
-            z-index: 2;}
+            z-index: 3;}
         
 @media screen and (min-width: 768px) {
     .main__blauw{
@@ -212,21 +223,19 @@ header {
         transform-origin: top left;
         transform: skewY(3deg);}
             .main__blauw--img{
-        position: relative;
-        width: 290px;
-        height: 486px;
-        background: url(../img/OceanMobile.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        margin: auto;
-        z-index: 2;}
+                float: left;
+                width: 290px;
+                height: 486px;
+                background: url(../img/OceanMobile.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                z-index: 2;}
             .main__blauw--content{
-        margin: auto;
-        position: relative;
-        width: 290px;
-        height: 100px;
-        z-index: 2;}
+                margin: auto 5rem auto 19rem;
+                width: auto;
+                height: auto;
+                z-index: 2;}
 
     .main__wit{
         position: relative;
@@ -247,7 +256,7 @@ header {
             right: 0;
             bottom: 0;
             left: 0;
-            z-index: -2;
+            z-index: 2;
             transform-origin: top left;
             transform: skewY(3deg);}
             .main__wit--img{
@@ -259,11 +268,11 @@ header {
                 background-position: center;
                 background-size: cover;
                 margin: auto;
-                z-index: 2;}
+                z-index: 3;}
             .main__wit--content{
                 margin: auto;
                 position: relative;
                 width: 290px;
                 height: 100px;
-                z-index: 2;}
+                z-index: 3;}
 }
