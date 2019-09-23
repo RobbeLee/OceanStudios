@@ -120,3 +120,37 @@ header {
             width: 25px;
             height: 25px;
         }
+
+@media (max-width: 850px) and (min-width: 760px) {
+    .item {
+        width: 400px;
+        height: 100%;
+        display: flex;
+    }
+        .item__img--container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+            .item__img {
+                width: 200px;
+                height: 400px;
+            }
+}
+
+@media (min-width: 860px) {
+    .item {
+        width: 400px;
+        height: 100%;
+        display: flex;
+    }
+        .item__img--container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+            .item__img {
+                width: 410px;
+                height: 495px;
+            }
+}
