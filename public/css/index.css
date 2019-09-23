@@ -23,7 +23,7 @@ header {
     align-items: flex-end;
 }
     .header__body {
-    padding: 10px 60px 10px 30px;
+    padding: 0px 50px 0px 5px;
     background: #fff;
     margin-bottom: 100px;
 }

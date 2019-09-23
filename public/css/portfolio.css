@@ -1,12 +1,278 @@
 @import 'default.css';
-
-/* Corrects the placement of the main so its under the nav */
-.main{
-    margin-top: 8.5rem;
-    height: auto;
+strong{
+    font-weight: 600;
+}
+header {
+    width: 100%;
+    height: 60vh;
+    background: url(../img/oceanbillboard.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
-.main__header{
-    height: 400px;
-    background-image: url("../img/oceanbillboard.jpg");
+/* Making the font readable on mobile*/
+p{
+    font-weight: 500;
+    font-size: 18px;
+}
+a{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Making so that the nav comes above the divs at all times*/
+.nav{
+    z-index: 4;
+}
+.header__body {
+    padding: 0 10px 0 20px;
+    background: #fff;
+    margin-bottom: 50px;}
+.header__title {
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: capitalize;}
+    .header__title--bold {
+        font-weight: 800;
+        font-style: italic;}
+
+
+.main__blauw{
+    position: relative;
+    background-color: #219A94;
+    height: 1252.16px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 60px 20px;}
+    .main__blauw:after{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content: '';
+        background: inherit;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        transform-origin: top left;
+        transform: skewY(5deg);}
+        .main__blauw--img{
+            position: relative;
+            width: 290px;
+            height: 486px;
+            background: url(../img/OceanMobile.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin: auto;
+            z-index: 2;}
+        .main__blauw--content{
+            margin: auto;
+            position: relative;
+            width: 290px;
+            height: 100px;
+            z-index: 2;}
+
+.main__wit{
+    position: relative;
+    background-color: white;
+    height: 1252.16px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 60px 20px;}
+    .main__wit:after{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content: '';
+        background: inherit;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        transform-origin: top left;
+        transform: skewY(5deg);}
+        .main__wit--img{
+            position: relative;
+            width: 290px;
+            height: 486px;
+            background: url(../img/OceanMobile.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin: auto;
+            z-index: 3;}
+        .main__wit--content{
+            margin: auto;
+            position: relative;
+            width: 290px;
+            height: 100px;
+            z-index: 3;}
+        
+@media screen and (min-width: 768px) {
+    .main__blauw{
+        position: relative;
+        background-color: #219A94;
+        height: 979px;
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 60px 20px;}
+        .main__blauw:after{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            content: '';
+            background: inherit;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+            transform-origin: top left;
+            transform: skewY(3deg);}
+            .main__blauw--img{
+                position: relative;
+                width: 290px;
+                height: 486px;
+                background: url(../img/OceanMobile.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                margin: auto;
+                z-index: 2;}
+            .main__blauw--content{
+                margin: auto;
+                position: relative;
+                width: 290px;
+                height: 100px;
+                z-index: 2;}
+
+    .main__wit{
+        position: relative;
+        background-color: white;
+        height: 979px;
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 60px 20px;}
+        .main__wit:after{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            content: '';
+            background: inherit;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -2;
+            transform-origin: top left;
+            transform: skewY(3deg);}
+            .main__wit--img{
+                position: relative;
+                width: 290px;
+                height: 486px;
+                background: url(../img/OceanMobile.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                margin: auto;
+                z-index: 2;}
+            .main__wit--content{
+                margin: auto;
+                position: relative;
+                width: 290px;
+                height: 100px;
+                z-index: 2;}
+}
+
+@media screen and (min-width: 1024px){
+    .main__blauw{
+        position: relative;
+        background-color: #219A94;
+        height: 979px;
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 60px 20px;}
+        .main__blauw:after{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content: '';
+        background: inherit;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        transform-origin: top left;
+        transform: skewY(3deg);}
+            .main__blauw--img{
+                float: left;
+                width: 290px;
+                height: 486px;
+                background: url(../img/OceanMobile.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                z-index: 2;}
+            .main__blauw--content{
+                margin: auto 5rem auto 19rem;
+                width: auto;
+                height: auto;
+                z-index: 2;}
+
+    .main__wit{
+        position: relative;
+        background-color: white;
+        height: 979px;
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 60px 20px;}
+        .main__wit:after{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            content: '';
+            background: inherit;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 2;
+            transform-origin: top left;
+            transform: skewY(3deg);}
+            .main__wit--img{
+                position: relative;
+                width: 290px;
+                height: 486px;
+                background: url(../img/OceanMobile.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                margin: auto;
+                z-index: 3;}
+            .main__wit--content{
+                margin: auto;
+                position: relative;
+                width: 290px;
+                height: 100px;
+                z-index: 3;}
 }

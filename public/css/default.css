@@ -429,6 +429,7 @@ p {
   transition: background 200ms ease, height 200ms ease, -webkit-box-shadow 200ms ease;
   transition: background 200ms ease, height 200ms ease, box-shadow 200ms ease;
   transition: background 200ms ease, height 200ms ease, box-shadow 200ms ease, -webkit-box-shadow 200ms ease;
+  z-index: 9999;
 }
 
 .nav__logo {
@@ -604,5 +605,26 @@ p {
   .nav__link {
     display: block;
   }
+}
+
+.header {
+  position: relative;
+}
+
+.header__body {
+  z-index: 2;
+}
+
+header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 /*# sourceMappingURL=default.css.map */

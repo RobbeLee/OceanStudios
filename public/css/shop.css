@@ -55,6 +55,16 @@ header {
         flex-direction: column;
     }
 
+    .item__img {
+        object-fit: cover;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        max-height: 100%;
+        max-width: 100%;
+    }
+
     .item__info {
         display: flex;
         flex-flow: row wrap;
@@ -83,14 +93,14 @@ header {
         align-items: center;
     }
 
-    .select-container svg {
-        position: absolute;
-        right: 5px;
-        width: 20px;
-        height: 10px;
-        fill: #219A94;
-        pointer-events: none;
-    }
+        .select-container svg {
+            position: absolute;
+            right: 5px;
+            width: 20px;
+            height: 10px;
+            fill: #219A94;
+            pointer-events: none;
+        }
 
     .item__size, .item__amount {
         width: 60px;
@@ -110,3 +120,37 @@ header {
             width: 25px;
             height: 25px;
         }
+
+@media (max-width: 850px) and (min-width: 760px) {
+    .item {
+        width: 400px;
+        height: 100%;
+        display: flex;
+    }
+        .item__img--container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+            .item__img {
+                width: 200px;
+                height: 400px;
+            }
+}
+
+@media (min-width: 860px) {
+    .item {
+        width: 400px;
+        height: 100%;
+        display: flex;
+    }
+        .item__img--container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+            .item__img {
+                width: 410px;
+                height: 495px;
+            }
+}

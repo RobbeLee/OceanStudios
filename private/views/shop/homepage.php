@@ -14,9 +14,11 @@ Shop | Ocean Studios
     </div>
 </header>
 <div class="items shirts">
-    <h2 class="title"> <img src="./img/swoosh.png" alt="loes" class="title__img"> T-shirts</h2>
+    <h2 class="item__swoosh" class="title"> <img src="./img/swoosh.png" alt="loes" class="title__img"> T-shirts</h2>
     <div class="item">
-        <img src="https://via.placeholder.com/200x400?text=wide%20boy" alt="weg, gone, loesoe">
+        <div class="item__img--container"> 
+            <img class="item__img" src="https://via.placeholder.com/200x400?text=wide%20boy" alt="weg, gone, loesoe">
+        </div>
         <div class="item__body">
             <div class="item__info">
                 <h3 class="item__title">Ocean T-shirt</h3>
@@ -46,7 +48,9 @@ Shop | Ocean Studios
         </div>
     </div>
     <div class="item">
-        <img src="https://via.placeholder.com/200x400?text=wide%20boy" alt="weg, gone, loesoe">
+        <div class="item__img--container">
+            <img class="item__img" src="https://via.placeholder.com/200x400?text=wide%20boy" alt="weg, gone, loesoe">
+        </div>
         <div class="item__body">
             <div class="item__info">
                 <h3 class="item__title">Ocean T-shirt</h3>
@@ -76,7 +80,9 @@ Shop | Ocean Studios
         </div>
     </div>
     <div class="item">
-        <img src="https://via.placeholder.com/200x400?text=wide%20boy" alt="weg, gone, loesoe">
+        <div class="item__img--container">
+            <img class="item__img" src="https://via.placeholder.com/200x400?text=wide%20boy" alt="weg, gone, loesoe">
+        </div>        
         <div class="item__body">
             <div class="item__info">
                 <h3 class="item__title">Ocean T-shirt</h3>
@@ -107,12 +113,14 @@ Shop | Ocean Studios
     </div>
 </div>
 <div class="items sokken">
-    <h2 class="title"><img src="./img/swoosh.png" alt="loes" class="title__img">Sokken</h2>
+    <h2 class="item__swoosh" class="title"><img src="./img/swoosh.png" alt="loes" class="title__img">Sokken</h2>
     <div class="item">
-        <img src="https://via.placeholder.com/200x400?text=wide%20boy" alt="weg, gone, loesoe">
+        <div class="item__img--container">
+            <img class="item__img" src="https://via.placeholder.com/200x400?text=wide%20boy" alt="weg, gone, loesoe">
+        </div>
         <div class="item__body">
             <div class="item__info">
-                <h3 class="item__title">Ocean T-shirt</h3>
+                <h3 class="item__title">Ocean sokken</h3>
                 <span class="item__price">€35,00</span>
                 <div class="select-container">
                     <select class="item__amount" name="" id="">
@@ -129,10 +137,12 @@ Shop | Ocean Studios
         </div>
     </div>
     <div class="item">
-        <img src="https://via.placeholder.com/200x400?text=wide%20boy" alt="weg, gone, loesoe">
+        <div class="item__img--container">
+            <img class="item__img" src="https://via.placeholder.com/200x400?text=wide%20boy" alt="weg, gone, loesoe">
+        </div>
         <div class="item__body">
             <div class="item__info">
-                <h3 class="item__title">Ocean T-shirt</h3>
+                <h3 class="item__title">Ocean sokken</h3>
                 <span class="item__price">€35,00</span>
                 <div class="select-container">
                     <select class="item__amount" name="" id="">
@@ -149,10 +159,12 @@ Shop | Ocean Studios
         </div>
     </div>
     <div class="item">
-        <img src="https://via.placeholder.com/200x400?text=wide%20boy" alt="weg, gone, loesoe">
+        <div class="item__img--container">
+            <img class="item__img" src="https://via.placeholder.com/200x400?text=wide%20boy" alt="weg, gone, loesoe">
+        </div>
         <div class="item__body">
             <div class="item__info">
-                <h3 class="item__title">Ocean T-shirt</h3>
+                <h3 class="item__title">Ocean sokken</h3>
                 <span class="item__price">€35,00</span>
                 <div class="select-container">
                     <select class="item__amount" name="" id="">
