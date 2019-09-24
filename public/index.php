@@ -27,6 +27,9 @@ $router->map('GET', '/shop', 'ShopController#index', 'Webshop Index');
 $router->map('GET', '/shop/cart', 'ShopController#cart', 'Webshop Cart');
 $router->map('GET', '/shop/item/[i:id]', 'ShopController#item', 'Webshop Item');
 
+// Web shop API
+$router->map('GET', '/shop/api/addItem?[i:id]&[i:amount]&[a:size]', 'ShopController#addItem', 'Add item to cart');
+
 $match = $router->match();
 
 

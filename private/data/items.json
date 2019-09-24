@@ -1,0 +1,38 @@
+{
+	"1": {
+		"name": "",
+		"price": 10,
+		"in_stock": 0,
+		"sizes": ["XS", "S", "M", "L", "XL"]
+	},
+	"2": {
+		"name": "",
+		"price": 10,
+		"in_stock": 0,
+		"sizes": ["XS", "S", "M", "L", "XL"]
+	},
+	"3": {
+		"name": "",
+		"price": 10,
+		"in_stock": 0,
+		"sizes": ["XS", "S", "M", "L", "XL"]
+	},
+	"4": {
+		"name": "",
+		"price": 10,
+		"in_stock": 0,
+		"sizes": ["XS", "S", "M", "L", "XL"]
+	},
+	"5": {
+		"name": "",
+		"price": 10,
+		"in_stock": 0,
+		"sizes": ["XS", "S", "M", "L", "XL"]
+	},
+	"6": {
+		"name": "",
+		"price": 10,
+		"in_stock": 0,
+		"sizes": ["XS", "S", "M", "L", "XL"]
+	}
+}
