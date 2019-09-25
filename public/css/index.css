@@ -51,7 +51,7 @@ header {
 }
     .aboutus__main--content {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     .aboutus__main--h2 {
         display: flex;
@@ -146,7 +146,7 @@ header {
 
 /*  ----------------------   intermission 2  Start    ---------------------- */
 .intermission__main-2 {
-    height: 230vh;
+    height: 220vh;
 }
 .intermission__main--content-2 {
     position: relative;
@@ -171,7 +171,9 @@ header {
     text-align: center;
     font-weight: 400;
 }
-
+.intermission__main-h2 {
+    margin-top: 1em;
+}
 .intermission__main--content-2-img {
     max-width: 260px;
     margin-top: 20px;
@@ -204,6 +206,12 @@ header {
 .webshop__main--p {
     text-align: left;
 }
+.webshop__main--h2 {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
 
 /*  ----------------------   Webshop  End    ---------------------- */
 
@@ -220,4 +228,37 @@ header {
         margin-bottom: 100px;
     }
     /* ----------------------   Banner End    ----------------------  */
+
+    /* ----------------------   Aboutus Start    ----------------------  */
+    .aboutus__main {
+        height: 90vh;
+    }
+    .aboutus__main--content {
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        row-gap: 2em;
+    }
+    .aboutus__main--h2 {
+    }
+    .aboutus__main--section-left {
+        padding: 1em;
+    }
+    .aboutus__main--img-left {
+        max-width: 90%;
+        padding: 5%;
+    }
+    .aboutus__main--section-right {
+        margin: 0 auto;
+        width: 90%;
+        padding: 5px;
+    }
+    .aboutus__main--img-right {
+        width: 10%;
+    }
+    .aboutus__main--p {
+        font-weight: 300;
+    }
+    /* ----------------------   Aboutus End    ----------------------  */
 }

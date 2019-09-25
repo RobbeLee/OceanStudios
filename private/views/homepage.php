@@ -18,9 +18,7 @@ Ocean Studios
     <!-- About us -->
     <div class="aboutus__main">
         <div class="aboutus__main--content">
-            <div class="aboutus__main--section-left">
-                <img src="img/free.jpg" alt="free realestate" class="aboutus__main--img-left">
-            </div>
+            <h2 class="aboutus__main--h2">Wie zijn wij</h2>
             <div class="aboutus__main--section-right">
                 <p class="aboutus__main--p">
                     <img src="img/swoosh-2.png" alt="swoosh" class="aboutus__main--img-right">
@@ -31,7 +29,9 @@ Ocean Studios
                     imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
                     Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
             </div>
-            <h2 class="aboutus__main--h2">Wie zijn wij</h2>
+            <div class="aboutus__main--section-left">
+                <img src="img/free.jpg" alt="free realestate" class="aboutus__main--img-left">
+            </div>
         </div>
     </div>
 
@@ -105,7 +105,7 @@ Ocean Studios
                 <img src="img/free.jpg" alt="" class="ourmission__main--img-right">
             </div>
             <div class="webshop__main--content-right">
-                <h2 class="aboutus__main--h2">Webshop & fashion</h2>
+                <h2 class="webshop__main--h2">Webshop & fashion</h2>
                 <p class="webshop__main--p">
                     <img src="img/swoosh-2.png" alt="swoosh" class="aboutus__main--img-right">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
