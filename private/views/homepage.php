@@ -18,9 +18,7 @@ Ocean Studios
     <!-- About us -->
     <div class="aboutus__main">
         <div class="aboutus__main--content">
-            <div class="aboutus__main--section-left">
-                <img src="img/free.jpg" alt="free realestate" class="aboutus__main--img-left">
-            </div>
+            <h2 class="aboutus__main--h2">Wie zijn wij</h2>
             <div class="aboutus__main--section-right">
                 <p class="aboutus__main--p">
                     <img src="img/swoosh-2.png" alt="swoosh" class="aboutus__main--img-right">
@@ -31,15 +29,17 @@ Ocean Studios
                     imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
                     Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
             </div>
-            <h2 class="aboutus__main--h2">Wie zijn wij</h2>
+            <div class="aboutus__main--section-left">
+                <img src="img/free.jpg" alt="free realestate" class="aboutus__main--img-left">
+            </div>
         </div>
     </div>
 
     <!-- Intermission part with Portfolio and Shop -->
     <div class="intermission__main">
         <div class="intermission__main--content">
-            <a href="#" class="left"><button>Portfolio</button></a>
-            <a href="#" class="right"><button>Portfolio</button></a>
+            <div class="intermission__main--content-button-1"><a href="#" class="left">Portfolio</a></div>
+            <div class="intermission__main--content-button-2"><a href="#" class="right">Shop</a></div>
         </div>
     </div>
 
@@ -47,9 +47,9 @@ Ocean Studios
     <div class="ourmission__main">
         <div class="ourmission__main--content">
             <div class="ourmission__main--section-left">
-                <img src="" alt="" class="ourmission__main--img-left">
-                <h2 class="aboutus__main--h2">Wie zijn wij</h2>
+                <h2 class="aboutus__main--h2">Onze missie</h2>
                 <p class="ourmission__main--p">
+                    <img src="img/swoosh-2.png" alt="swoosh" class="aboutus__main--img-right">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
                     massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
                     quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
@@ -59,16 +59,42 @@ Ocean Studios
                 </p>
             </div>
             <div class="ourmission__main--section-right">
-                <img src="" alt="" class="ourmission__main--img-right">
+                <img src="img/free.jpg" alt="" class="ourmission__main--img-right">
             </div>
         </div>
     </div>
 
     <!-- Intermission part with Portfolio and Shop -->
     <div class="intermission__main-2">
-        <div class="intermission__main-2--content">
-            <a href="#"><button class="left">Portfolio</button></a>
-            <a href="#"><button class="right">Portfolio</button></a>
+        <div class="intermission__main--content-2">
+            <a href="#" class="intermission__main--content-2-button-3">
+                <img src="img/free.jpg" alt="" class="intermission__main--content-2-img">
+                <hr>
+                <p class="intermission__main--content-2-p">Integer
+                    tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+                </p>
+            </a>
+            <a href="#" class="intermission__main--content-2-button-4">
+                <img src="img/free.jpg" alt="" class="intermission__main--content-2-img">
+                <hr>
+                <p class="intermission__main--content-2-p">Integer
+                    tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+                </p>
+            </a>
+            <a href="#" class="intermission__main--content-2-button-5">
+                <img src="img/free.jpg" alt="" class="intermission__main--content-2-img">
+                <hr>
+                <p class="intermission__main--content-2-p">Integer
+                    tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+                </p>
+            </a>
+            <a href="#" class="intermission__main--content-2-button-6">
+                <img src="img/free.jpg" alt="" class="intermission__main--content-2-img">
+                <hr>
+                <p class="intermission__main--content-2-p">Integer
+                    tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+                </p>
+            </a>
         </div>
     </div>
 
@@ -76,21 +102,16 @@ Ocean Studios
     <div class="websshop__main">
         <div class="webshop__main--content">
             <div class="webshop__main--content-left">
-
+                <img src="img/free.jpg" alt="" class="ourmission__main--img-right">
             </div>
             <div class="webshop__main--content-right">
-                <img src="" alt="" class="webshop__main--img-right">
+                <h2 class="webshop__main--h2">Webshop & fashion</h2>
                 <p class="webshop__main--p">
-<!--                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean-->
-<!--                    massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec-->
-<!--                    quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.-->
-<!--                    Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo,-->
-<!---->
-<!--                    rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer-->
-<!--                    tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo-->
-<!--                    ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra-->
-<!--                    quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean-->
-<!--                    imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.-->
+                    <img src="img/swoosh-2.png" alt="swoosh" class="aboutus__main--img-right">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                    massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+                    quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                    Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo,
                 </p>
             </div>
         </div>
