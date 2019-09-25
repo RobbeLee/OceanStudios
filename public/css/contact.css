@@ -88,7 +88,7 @@ header {
 }
 
 .input:focus ~ .input-label {
-    transform: translate(-10px, -25px);
+    transform: translate(-10px, -30px);
     font-size: 16px;
     color: #219A94;
 }
@@ -104,13 +104,13 @@ header {
 }
 
 .has-value ~ .input-label {
-    transform: translate(-10px, -25px);
+    transform: translate(-10px, -30px);
     font-size: 16px;
 }
 
 .btn {
     height: 40px;
-    width: 270px;
+    width: 230px;
     background: #219A94;
     color: #fff;
     font-size: 18px;
