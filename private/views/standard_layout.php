@@ -23,7 +23,7 @@
                 <div class="line line3"></div>
             </label>
             <div class="mobile-nav">
-                <a class="mobile-nav__link" href="<?php echo url('public/') ?>">home</a>
+                <a class="mobile-nav__link" href="<?php echo surl('public') ?>">home</a>
                 <a class="mobile-nav__link" href="<?php echo url('public/portfolio') ?>">portfolio</a>
                 <a class="mobile-nav__link" href="<?php echo url('public/shop') ?>">shop</a>
             </div>
@@ -31,7 +31,17 @@
         <main class="main">
             <?=$this->section('content')?>
         </main>
-        <footer class="footer"></footer>
+        <footer class="footer">
+            <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d968.8505685016373!2d4.856545214542727!3d52.39091868014062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5e28849730d2f%3A0x5dffd675d740eddb!2sMediacollege%20Amsterdam!5e0!3m2!1snl!2snl!4v1569414891501!5m2!1snl!2snl" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <h2 class="footer__h2">Contact</h2>
+            <a class="footer__tel" href="tel:+31 020 850 9500">Phone: +31 020 850 9500</a>
+            <h3 class="footer__times">Monday - Friday: 09:00 - 17:00</h3>
+            <h3 class="footer__loc">Contactweg 36, 1014 AN, Amsterdam</h3>
+            <a class="footer__mail" href="mailto:info@oceanstudios.nl">info@oceanstudios.nl</a>
+            <h2 class="footer__h2">Service</h2>
+            <a class="footer__a" href="#Klantenservice">Klantenservice</a>
+            <a class="footer__a" href="#Help">Help</a>
+        </footer>
         <script src="<?php echo url('OceanStudios/public/js/nav.js') ?>"></script>
     </body>
 </html>
