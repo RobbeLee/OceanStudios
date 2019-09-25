@@ -21,6 +21,7 @@ $router->setBasePath('/OceanStudios/public');
 // User pages
 $router->map('GET', '/', 'HomeController#index', 'Home page');
 $router->map('GET', '/portfolio', 'HomeController#portfolio', 'Portfolio page');
+$router->map('GET', '/contact', 'ContactController#index', 'Contact page');
 
 // Web shop
 $router->map('GET', '/shop', 'ShopController#index', 'Webshop Index');
@@ -28,7 +29,10 @@ $router->map('GET', '/shop/cart', 'ShopController#cart', 'Webshop Cart');
 $router->map('GET', '/shop/item/[i:id]', 'ShopController#item', 'Webshop Item');
 
 // Web shop API
+$router->map('GET', '/shop/api/getItems', 'ShopController#getItems', 'Get all items');
 $router->map('GET', '/shop/api/addItem?[i:id]&[i:amount]&[a:size]', 'ShopController#addItem', 'Add item to cart');
+$router->map('GET', '/shop/api/removeItem?[i:id]', 'ShopController#removeItem', 'Remove item');
+$router->map('GET', '/shop/api/clearCart', 'ShopController#clearCart', 'Clear cart');
 
 $match = $router->match();
 

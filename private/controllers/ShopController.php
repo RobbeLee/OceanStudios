@@ -18,6 +18,10 @@ class ShopController {
 		echo $template_engine->render('shop/item');
 	}
 
+	public function getItems() {
+		echo $Cart->getItems();
+	}
+
 	public function addItem($itemID, $amount, $size) {
 		$state = $Cart->addItem($itemID, $amount, $size);
 
