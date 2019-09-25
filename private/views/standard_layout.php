@@ -23,7 +23,7 @@
                 <div class="line line3"></div>
             </label>
             <div class="mobile-nav">
-                <a class="mobile-nav__link" href="<?php echo surl('public') ?>">home</a>
+                <a class="mobile-nav__link" href="<?php echo    url('public') ?>">home</a>
                 <a class="mobile-nav__link" href="<?php echo url('public/portfolio') ?>">portfolio</a>
                 <a class="mobile-nav__link" href="<?php echo url('public/shop') ?>">shop</a>
             </div>
