@@ -40,7 +40,7 @@ header {
 
 /* ----------------------   Aboutus Start    ----------------------  */
 .aboutus__main {
-    height: 100vh;
+    height: 90vh;
 }
     .aboutus__main--content {
         display: flex;
@@ -62,6 +62,10 @@ header {
     .aboutus__main--section-right {
         margin: 0 auto;
         width: 90%;
+        padding: 5px;
+    }
+    .aboutus__main--img-right {
+        width: 10%;
     }
     .aboutus__main--p {
         font-weight: 300;
@@ -70,22 +74,63 @@ header {
 
 /* ----------------------   intermission 1 Start    ---------------------- */
 .intermission__main {
-
+    height: 30vh;
+    padding-bottom: 20px;
 }
-    .intermission__main--content {}
+    .intermission__main--content {
+        position: relative;
+        background-color: #219A94;
+        height: 30vh;
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .intermission__main--content a {
+        padding: 1em;
+        margin-top: 13px;
+    }
+
+    .intermission__main--content button {
+        padding: .7em 3em;
+    }
 /*  ----------------------   intermission 1 End    ---------------------- */
 
 /*  ----------------------   Ourmission Start    ---------------------- */
 .ourmission__main {
-
+    height: 90vh;
 }
-    .ourmission__main--content {}
-    .ourmission__main--section-left {}
-        .ourmission__main--img-left {}
-        .ourmission__main--p {}
+    .ourmission__main--content {
+        display: flex;
+        flex-direction: column;
 
-    .ourmission__main--section-right {}
-        .ourmission__main--img-right{}
+    }
+    .aboutus__main--h2 {
+        display: flex;
+        justify-content: center;
+        padding: 1em;
+    }
+    .ourmission__main--section-left {
+        margin: 0 auto;
+        width: 90%;
+        padding: 5px;
+    }
+    .ourmission__main--img-left {}
+    .ourmission__main--p {
+        font-weight: 300;
+    }
+    .ourmission__main--section-right {
+        background-color: var(--link-active);
+        text-align: center;
+    }
+    .ourmission__main--img-right{
+        max-width: 90%;
+        padding: 5%;
+    }
 /*  ----------------------   Ourmission End    ---------------------- */
 
 /*  ----------------------   intermission 2  Start    ---------------------- */
