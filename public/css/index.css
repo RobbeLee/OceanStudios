@@ -187,7 +187,7 @@ header {
 
 /*  ----------------------   Webshop  Start    ---------------------- */
 .websshop__main {
-    height: 90vh;
+    height: 80vh;
 }
 .webshop__main--content {
     display: flex;
@@ -231,16 +231,16 @@ header {
 
     /* ----------------------   Aboutus Start    ----------------------  */
     .aboutus__main {
-        height: 90vh;
+        height: 100vh;
     }
     .aboutus__main--content {
         width: 95%;
         margin: 0 auto;
         display: flex;
         flex-direction: row;
-        row-gap: 2em;
     }
     .aboutus__main--h2 {
+        display: none;
     }
     .aboutus__main--section-left {
         padding: 1em;
