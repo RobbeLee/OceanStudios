@@ -20,19 +20,16 @@
 	"4": {
 		"name": "",
 		"price": 10,
-		"in_stock": 0,
-		"sizes": ["XS", "S", "M", "L", "XL"]
+		"in_stock": 0
 	},
 	"5": {
 		"name": "",
 		"price": 10,
-		"in_stock": 0,
-		"sizes": ["XS", "S", "M", "L", "XL"]
+		"in_stock": 0
 	},
 	"6": {
 		"name": "",
 		"price": 10,
-		"in_stock": 0,
-		"sizes": ["XS", "S", "M", "L", "XL"]
+		"in_stock": 0
 	}
 }
