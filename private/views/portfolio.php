@@ -16,6 +16,7 @@
 Portfolio | Ocean Studios
 <?php $this->stop('page_title') ?>
 
+<!-- HTML code -->
 <!-- Hier komt de html code -->
 <!-- Dit komt in .main te staan -->
 <header class="header">
@@ -38,7 +39,6 @@ Portfolio | Ocean Studios
         <a href="http://bjornemmaneel.nl/imageviewer/" target="_blank">http://bjornemmaneel.nl/imageviewer/</a>
         <br>
         <br>
-
         <!--    Here you explain or give a small introduction of your project    -->
         <p>Deze Imageviewer werkt met 4 knoppen. Links, rechts, omhoog en omlaag. Link die gaat terug in de gallerij, rechts gaat verder in de gallerij,
          omhoog verplaatst 4 terug in de gallerij, omlaag gaat 4 verder in de lijst. Deze opdracht was voor het MediaCollege Amsterdam.</p>
