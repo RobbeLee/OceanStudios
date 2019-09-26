@@ -7,7 +7,7 @@ require '../private/includes/AltoRouter.php';
  * Verder willen we nog wat andere zaken instellen en goed zetten
  * Dit staat in het bestand private/includes/init.php
  */
-$CONFIG = require '../private/includes/config.php';
+$CONFIG = require '../private/includes/config.example.php';
 require '../private/includes/init.php';
 $router = new AltoRouter();
 
@@ -22,6 +22,7 @@ $router->setBasePath('/public');
 $router->map('GET', '/', 'HomeController#index', 'Home page');
 $router->map('GET', '/portfolio', 'HomeController#portfolio', 'Portfolio page');
 $router->map('GET', '/contact', 'ContactController#index', 'Contact page');
+$router->map('GET', '/terms', 'TermsController#terms', 'Terms and services page');
 
 // Web shop
 $router->map('GET', '/shop', 'ShopController#index', 'Webshop Index');
