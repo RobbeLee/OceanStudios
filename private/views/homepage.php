@@ -35,8 +35,8 @@ Ocean Studios
     <!-- Intermission part with Portfolio and Shop -->
     <div class="intermission__main">
         <div class="intermission__main--content">
-            <a href="#""><div class="intermission__main--content-button-1">Portfolio</div></a>
-            <a href="#""><div class="intermission__main--content-button-2">Shop</div></a>
+            <a href="<?php echo url('public/portfolio') ?>"><div class="intermission__main--content-button-1">Portfolio</div></a>
+            <a href="<?php echo url('public/shop') ?>"><div class="intermission__main--content-button-2">Shop</div></a>
         </div>
     </div>
 
@@ -88,11 +88,11 @@ Ocean Studios
     <!-- Webshop and Fashion -->
     <div class="websshop__main">
         <div class="webshop__main--content">
+            <h2 class="webshop__main--h2">Webshop & fashion</h2>
             <div class="webshop__main--content-left">
-                <img src="img/free.jpg" alt="" class="ourmission__main--img-right">
+                <img src="img/deep-sea.png" alt="" class="ourmission__main--img-right">
             </div>
             <div class="webshop__main--content-right">
-                <h2 class="webshop__main--h2">Webshop & fashion</h2>
                 <p class="webshop__main--p">
                     <img src="img/swoosh-2.png" alt="swoosh" class="aboutus__main--img-right">
                     Heb je een tof product en ben je op zoek naar een webshop? Bij Ocean Studios ben je aan het juiste adres!
