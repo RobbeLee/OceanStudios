@@ -557,14 +557,19 @@ p {
 .nav .hamburger .line {
   width: 100%;
   height: 2px;
-  background: var(--nav-link);
+  background: #fff;
   border-radius: 8px;
+  transition: background 250ms ease;
   -webkit-transform-origin: left;
           transform-origin: left;
   -webkit-transition: opacity 250ms ease, -webkit-transform 250ms ease;
   transition: opacity 250ms ease, -webkit-transform 250ms ease;
   transition: transform 250ms ease, opacity 250ms ease;
   transition: transform 250ms ease, opacity 250ms ease, -webkit-transform 250ms ease;
+}
+
+.nav.nav-scroll .hamburger .line {
+  background: #000;
 }
 
 .nav .mobile-nav {
@@ -609,6 +614,10 @@ p {
 .nav #hamburger:checked ~ .mobile-nav {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+
+.nav #hamburger:checked ~ .hamburger .line {
+  background: #000;
 }
 
 .nav #hamburger:checked ~ .hamburger .line1 {
@@ -658,6 +667,33 @@ p {
   }
 }
 
+.shop-nav {
+  position: fixed;
+  right: 20px;
+  top: 120px;
+  width: 60px;
+  height: 60px;
+  border-radius: 40px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 250ms ease;
+  background: #fff;
+  z-index: 5555;
+  overflow: hidden;
+}
+
+.shop-nav__link {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop-nav:hover, .shop-nav:focus {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, .4)
+}
+
 .header {
   position: relative;
 }
@@ -678,7 +714,6 @@ header::after {
   background: rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-/*# sourceMappingURL=default.css.map */
 
 .footer {
   width: 100%;
@@ -688,6 +723,7 @@ header::after {
   background-color: #219A94;
   text-decoration: #fff;
   font-size: 1.25rem;
+  margin-top: 150px;
 }
   .footer__map {
     width: 100%;
@@ -762,3 +798,4 @@ header::after {
     text-decoration: underline;
     margin-bottom: 5px;
   }
+/*# sourceMappingURL=default.css.map */

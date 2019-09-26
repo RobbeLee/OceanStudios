@@ -8,23 +8,64 @@
 Cart | Ocean Studios 
 <?php $this->stop('page_title') ?>
 
+<div class="shop-nav">
+    <a class="shop-nav__link" href="<?php echo url('public/shop/cart') ?>"><svg id="Group_17" data-name="Group 17" xmlns="http://www.w3.org/2000/svg" width="30.869" height="36.978" viewBox="0 0 30.869 36.978"><path id="Path_34" data-name="Path 34" d="M-103.339-184.24c0-1.44-.012-2.834.006-4.228a8.3,8.3,0,0,1,.139-1.469,6.276,6.276,0,0,1,6.454-4.983,6.273,6.273,0,0,1,5.9,5.5,15.933,15.933,0,0,1,.059,1.621c.008,1.167,0,2.333,0,3.554h.4c1.276,0,2.552,0,3.828,0a2.324,2.324,0,0,1,2.439,2.13c.324,2.651.617,5.306.923,7.959q.529,4.59,1.056,9.179c.172,1.494.355,2.987.508,4.483a2.371,2.371,0,0,1-2.23,2.534c-.1.006-.193.006-.289.006q-12.911,0-25.823,0a2.326,2.326,0,0,1-2.355-1.508,2.707,2.707,0,0,1-.149-1.162c.378-3.493.784-6.982,1.185-10.472.424-3.693.844-7.387,1.283-11.079a2.318,2.318,0,0,1,2.348-2.068C-106.233-184.246-104.814-184.24-103.339-184.24Zm0,1.4c-.142-.007-.248-.017-.353-.017q-1.914,0-3.828,0a.989.989,0,0,0-1.117.971c-.216,1.792-.418,3.585-.624,5.378q-.5,4.3-.989,8.606-.424,3.712-.841,7.424a.977.977,0,0,0,1,1.142c.06,0,.12,0,.181,0H-84.2c.06,0,.12,0,.181,0a.978.978,0,0,0,.992-1.151q-.269-2.458-.554-4.914-.524-4.572-1.051-9.143c-.276-2.4-.544-4.806-.826-7.208-.1-.834-.422-1.106-1.256-1.107H-90.76c-.008.149-.017.255-.017.361,0,.385-.013.771.01,1.155.005.093.11.2.2.266a1.574,1.574,0,0,1,.579,1.795,1.563,1.563,0,0,1-1.493,1.05,1.544,1.544,0,0,1-1.474-1.07,1.562,1.562,0,0,1,.568-1.766c.088-.068.211-.167.215-.255.021-.5.01-1,.01-1.516h-9.786c0,.472-.015.927.009,1.38a.572.572,0,0,0,.2.371,1.581,1.581,0,0,1,.585,1.794,1.544,1.544,0,0,1-1.48,1.062,1.561,1.561,0,0,1-1.486-1.058,1.569,1.569,0,0,1,.589-1.79c.079-.061.185-.153.188-.234C-103.333-181.816-103.342-182.319-103.342-182.841Zm11.153-1.419a1.5,1.5,0,0,0,.022-.168c0-1.456.009-2.911,0-4.367a4.662,4.662,0,0,0-.129-.963,4.915,4.915,0,0,0-4.946-3.779,4.822,4.822,0,0,0-4.649,4.363c-.112,1.52-.045,3.053-.057,4.58,0,.105.012.211.019.335Z" transform="translate(112.481 194.926)"/></svg></a>
+</div>
+
 <header class="header">
     <div class="header__body">
         <h1 class="header__title">Mijn <span class="header__title--bold">winkelwagentje</span></h1>
     </div>
 </header>
+
+<div class="statusPopup success">
+    <span class="statusPopup__title">Success</span>
+    <p class="statusPoppup__text">Verwijdert van winkelwagen.</p>
+</div>
+<div class="statusPopup failed">
+    <span class="statusPopup__title">Error</span>
+    <p class="statusPoppup__text">Er is iets fout gegaan.</p>
+</div>
+
 <div class="wrapper">
-    <div class="items">
-        <h2 class="items__swoosh" class="title title__img"> <img src="./img/swoosh.png" alt="loes"> Winkelwagentje</h2>
+    <div>
+        <div class="box items">
+            <h2 class="box__title"><img src="/../img/witte-swoosh.png" alt="loes"> Winkelwagentje</h2>
+            <?php if (count($products) <= 0): ?> <span style="font-size:1.25rem;color:#fff;font-weight:300;">U heeft nog niks in uw winkelwagentje.</span> <?php endif; ?>
+            <?php foreach($products as $item): ?>
+                <?php $amount = count($item); ?>
+                <div class="item">
+                    <div class="item__img-container">
+                        <img class="item__img" src="<?=htmlspecialchars($item[0]['image_url'])?>" alt="Error">
+                    </div>
+                    <div class="item__body">
+                        <span class="item__title"><?=htmlspecialchars($item[0]['title'])?></span>
+                        <hr>
+                        <p class="item__desc">Beschrijven van het product.</p>
+                        <div class="item__info-container">
+                            <span class="item__info" data-amount="<?=$amount?>" id="amount-<?=htmlspecialchars($item[0]['id'])?>">x<?=htmlspecialchars($amount)?></span>
+                            <span class="item__info item__info--cap"><?=htmlspecialchars($item[0]['size'])?></span>
+                            <button data-id="<?=htmlspecialchars($item[0]['id'])?>" class="item__btn"><svg xmlns="http://www.w3.org/2000/svg" width="19.962" height="24.971" viewBox="0 0 19.962 24.971"><g id="Group_25" data-name="Group 25" transform="translate(-57.107 -401.551)"><path id="Path_48" data-name="Path 48" d="M107.15,499.177c2.249,0,4.5.019,6.748-.01a1.209,1.209,0,0,1,1.277,1.431c-.27,1.816-.507,3.637-.756,5.456q-.4,2.889-.791,5.779-.393,2.869-.788,5.738c-.048.348-.1.7-.142,1.043a1.15,1.15,0,0,1-1.2,1.077q-4.347,0-8.694,0a1.154,1.154,0,0,1-1.2-1.055q-.6-4.4-1.208-8.808-.6-4.364-1.192-8.729a6.59,6.59,0,0,1-.1-.783,1.124,1.124,0,0,1,1.15-1.138c.912-.007,1.824,0,2.736,0Zm0,.819h-6.79c-.338,0-.46.149-.411.486.041.281.076.562.115.843q.538,3.913,1.077,7.825.637,4.645,1.27,9.291c.048.35.134.425.485.425h8.512c.349,0,.435-.076.483-.428q.608-4.434,1.216-8.869.618-4.515,1.235-9.03c.059-.428-.038-.544-.464-.544Z" transform="translate(-40.062 -93.42)" fill="#219a94" stroke="#219a94" stroke-miterlimit="10" stroke-width="0.5"/><path id="Path_49" data-name="Path 49" d="M64.435,404.04c0-.212,0-.406,0-.6a1.569,1.569,0,0,1,1.63-1.637q1.023,0,2.047,0a1.571,1.571,0,0,1,1.632,1.637c0,.194,0,.388,0,.6h5.413a1.566,1.566,0,0,1,1.661,1.664c0,.189,0,.378,0,.567a.407.407,0,1,1-.814,0c-.006-.2,0-.405,0-.608a.751.751,0,0,0-.807-.793q-8.105,0-16.211,0a.751.751,0,0,0-.8.8c0,.2,0,.405,0,.608a.406.406,0,1,1-.812,0,5.8,5.8,0,0,1,.023-.93,1.55,1.55,0,0,1,1.578-1.3q2.6,0,5.208,0Zm4.478-.011c0-.262.015-.5,0-.732a.724.724,0,0,0-.72-.663q-1.1-.009-2.208,0a.681.681,0,0,0-.685.552,6.6,6.6,0,0,0-.045.843Z" transform="translate(0 0)" fill="#219a94" stroke="#219a94" stroke-miterlimit="10" stroke-width="0.5"/><path id="Path_50" data-name="Path 50" d="M126.774,519.6H133.5c.425,0,.522.116.464.544q-.618,4.515-1.235,9.03-.607,4.435-1.216,8.869c-.048.352-.133.428-.483.428H122.52c-.352,0-.437-.075-.485-.425q-.635-4.645-1.27-9.291-.536-3.913-1.077-7.825c-.039-.281-.074-.562-.115-.843-.049-.336.073-.485.411-.486h6.79Zm-1.9,17.135c0-.039-.006-.093-.014-.146q-.352-2.506-.7-5.012-.457-3.248-.913-6.5c-.153-1.089-.3-2.179-.459-3.268-.042-.292-.226-.448-.471-.417s-.387.243-.347.543c.021.154.047.307.068.461q.394,2.816.788,5.633.459,3.268.92,6.535c.105.748.209,1.5.321,2.244a.388.388,0,0,0,.445.346A.4.4,0,0,0,124.874,536.732Zm3.8-.057c-.009.282.127.453.35.48a.393.393,0,0,0,.46-.351c.077-.5.143-1,.214-1.5l.918-6.515q.4-2.826.8-5.653c.06-.428.124-.855.174-1.284a.387.387,0,0,0-.262-.431.369.369,0,0,0-.454.123.793.793,0,0,0-.115.337c-.067.433-.122.869-.183,1.3q-.4,2.817-.794,5.633-.417,2.967-.833,5.934Zm-1.494-7.465q0-3.7,0-7.394a1.637,1.637,0,0,0-.009-.242.406.406,0,0,0-.8,0,1.806,1.806,0,0,0-.009.263q0,7.323,0,14.646a2.957,2.957,0,0,0,.006.324.386.386,0,0,0,.382.349c.277.011.43-.169.43-.51Q127.185,532.927,127.184,529.21Z" transform="translate(-59.686 -113.021)" fill="#fff"/><path id="Path_51" data-name="Path 51" d="M255.817,423.631h-3.661a6.6,6.6,0,0,1,.045-.843.681.681,0,0,1,.685-.552q1.1-.009,2.208,0a.724.724,0,0,1,.72.663C255.833,423.132,255.817,423.369,255.817,423.631Z" transform="translate(-186.904 -19.602)" fill="#fff"/><path id="Path_52" data-name="Path 52" d="M181.585,579.172a.4.4,0,0,1-.365.425.388.388,0,0,1-.445-.346c-.112-.747-.215-1.5-.321-2.245q-.461-3.268-.92-6.535-.4-2.817-.788-5.634c-.021-.154-.048-.307-.068-.461-.04-.3.1-.511.347-.543s.429.125.471.417c.156,1.089.306,2.179.459,3.268q.456,3.248.913,6.5.352,2.506.7,5.012C181.579,579.08,181.582,579.134,181.585,579.172Z" transform="translate(-116.397 -155.462)" fill="#219a94" stroke="#219a94" stroke-miterlimit="10" stroke-width="0.5"/><path id="Path_53" data-name="Path 53" d="M344.419,579.064l.27-1.927q.416-2.967.833-5.934.4-2.817.794-5.633c.061-.434.116-.87.183-1.3a.794.794,0,0,1,.115-.337.369.369,0,0,1,.454-.123.386.386,0,0,1,.262.431c-.05.429-.114.856-.174,1.284q-.4,2.827-.8,5.653l-.918,6.515c-.071.5-.137,1-.214,1.5a.393.393,0,0,1-.46.351C344.546,579.517,344.41,579.346,344.419,579.064Z" transform="translate(-275.427 -155.41)" fill="#219a94" stroke="#219a94" stroke-miterlimit="10" stroke-width="0.5"/><path id="Path_54" data-name="Path 54" d="M288.178,568.051q0,3.717,0,7.434c0,.341-.153.521-.43.51a.386.386,0,0,1-.382-.349,2.958,2.958,0,0,1-.006-.324q0-7.323,0-14.646a1.811,1.811,0,0,1,.009-.263.406.406,0,0,1,.8,0,1.638,1.638,0,0,1,.009.243Q288.178,564.355,288.178,568.051Z" transform="translate(-220.679 -151.863)" fill="#219a94" stroke="#219a94" stroke-miterlimit="10" stroke-width="0.5"/></g></svg></button>
+                        </div>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        </div>
     </div>
-    <div class="price">
-        <h2 class="price__swoosh" class="title title__img"> <img src="./img/swoosh.png" alt="loes"> Totaal prijs</h2>
-        <h3></h3>
-        <button class="price__btn">Betalen</button>
-    </div>
-    <div class="pay">
-        <h2 class="pay__swoosh" class="title title__img"> <img src="./img/swoosh.png" alt="loes"> Betaalwijze</h2>
-        <h3 class="pay__h3">Wij accepteren</h3>
-        <p>Helaas is dit tijdelijk niet mogenlijk</p>
+    <div>
+        <div class="box price">
+            <h2 class="box__title"><img src="/../img/witte-swoosh.png" alt="loes"> Totaal prijs</h2>
+            <p class="price__sum price__sum--space"><span class="price__sum--bold">Subtotaal</span><span>€<?=htmlspecialchars($price)?></span></p>
+            <p class="price__sum price__sum--space"><span>Verzendkosten</span><span></span>€00,00</p>
+            <hr>
+            <p class="price__sum price__sum--space"><span class="price__sum--bold">Totale prijs</span><span>€<?=htmlspecialchars($price)?></span></p>
+            <button class="box__btn">Betalen</button>
+        </div>
+        <div class="box pay">
+            <h2 class="box__title"><img src="/../img/witte-swoosh.png" alt="loes"> Betaalwijze</h2>
+            <span style="color:#fff;">Op het moment is het niet mogelijk om te bestellen.</span>
+        </div>
     </div>
 </div>
+
+<script src="<?php echo url('js/cart.js') ?>"></script>

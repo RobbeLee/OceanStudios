@@ -3,8 +3,11 @@ require_once $CONFIG['PRIVATE'] . '/includes/functions.php';
 require_once $CONFIG['PRIVATE'] . '/models/model.php';
 
 if (session_status() == PHP_SESSION_NONE) session_start();
-if (!isset($_SESSION['cart'])) $_SESSION['cart'] = new Cart();
+if (empty($_SESSION['cart'])) $_SESSION['cart'] = [];
+$Cart = new Cart();
 
+//unset($_SESSION['cart']);
+//echo basename($_SERVER['PHP_SELF']);
 /**
  * Onderstaande code zorgt ervoor dat als we in onze code een controller willen gebruiken bijv:
  *

@@ -1,15 +1,13 @@
 <?php
 
-$rawData = file_get_contents(__DIR__ . '/../data/items.json');
-$items = json_decode($rawData);
-
 class Cart {
-    /**
-     * @return array
-     */
-    public function getItems() {
-        if (!$_SESSION['cart']) $_SESSION['cart'] = [];
-        return $items;
+    private $rawData;
+    private $items;
+
+    public function __construct() {
+        if (empty($_SESSION['cart'])) $_SESSION['cart'] = [];
+        $rawData = file_get_contents(__DIR__ . '/../data/items.json');
+        $items = json_decode($rawData);
     }
 
     /**
@@ -23,15 +21,14 @@ class Cart {
         if (!is_string($itemID)) return 1;
         if (!is_string($amount)) return 1;
         if (!is_string($size)) return 1;
-        if (!$_SESSION['cart']) $_SESSION['cart'] = [];
+        if ($size === 'null') $size = null;
         
-        if (!$items[$itemID]) return 2;
-        if ($items[$itemID]["amount"] <= 0) return 3;
+        //if (!$this->items[$itemID]) return 2;
         
         $amount = intval($amount);
 
         for ($i = 0; $i < $amount; $i++) {
-            array_push($_SESSION['cart'], $itemID);
+            array_push($_SESSION['cart'], ['id' => $itemID, 'size' => $size]);
         }
         return 4;
     }
@@ -41,65 +38,25 @@ class Cart {
      * 
      * @param int item id
      * 
-     * @return boolean
+     * @return int 1 = is niet een string | 2 = zit niet in shopping cart | 3 = success
      */
     public function removeItem($itemID) {
         if (!is_string($itemID)) return 1;
-        if (!$_SESSION['cart']) $_SESSION['cart'] = [];
+        $found = false;
 
-        if (!in_array($itemID, $_SESSION['cart'])) return 2;
-
-        $index = array_search($itemID, $_SESSION['cart']);
-
-        array_slice($_SESSION['cart'], $index, 1);
-        return 3;
+        for($i = 0; $i < count($_SESSION['cart']); $i++) {
+            if ($_SESSION['cart'][$i]['id'] == $itemID) {
+                echo "eh";
+                $found = true;
+                unset($_SESSION['cart'][$i]);
+                $_SESSION['cart'] = array_values($_SESSION['cart']);
+                return 3;
+            }
+        }
+        if (!$found) return 2;
     }
 
     public function clearCart() {
         $_SESSION['cart'] = [];
     }
-}
-
-class ShoppingCart
-{
-
-    private $products;
-
-    public function __construct()
-    {
-        $this->products = [];
-    }
-
-    /**
-     * Add a product
-     * @param $product
-     */
-    public function addProduct($product)
-    {
-        $this->products[] = $product;
-    }
-
-    /**
-     * Remove an item from the shopping cart at a position
-     * @param $index
-     */
-    public function removeItem($position)
-    {
-        array_splice($this->products, $position, 1);
-    }
-
-    /**
-     * Returns all products in the shopping cart.
-     * @return array
-     */
-    public function getProducts()
-    {
-        return $this->products;
-    }
-
-    public function hasProducts()
-    {
-        return !empty($this->products);
-    }
-
 }

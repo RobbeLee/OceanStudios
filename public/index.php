@@ -11,7 +11,7 @@ $CONFIG = require '../private/includes/config.php';
 require '../private/includes/init.php';
 $router = new AltoRouter();
 
-$router->setBasePath('/OceanStudios/public');
+$router->setBasePath('/public');
 /**
  * Hier stellen we de juiste "routes" in voor onze website
  * We vertellen de router welke url naar welk stukje code (de controller) moet worden doorgestuuurd.
@@ -30,9 +30,8 @@ $router->map('GET', '/shop/item/[i:id]', 'ShopController#item', 'Webshop Item');
 
 // Web shop API
 $router->map('GET', '/shop/api/getItems', 'ShopController#getItems', 'Get all items');
-$router->map('GET', '/shop/api/addItem?[i:id]&[i:amount]&[a:size]', 'ShopController#addItem', 'Add item to cart');
-$router->map('GET', '/shop/api/removeItem?[i:id]', 'ShopController#removeItem', 'Remove item');
-$router->map('GET', '/shop/api/clearCart', 'ShopController#clearCart', 'Clear cart');
+$router->map('GET', '/shop/api/addItem/[i:id]/[i:amount]/[a:size]', 'ShopController#addItem', 'Add item to cart');
+$router->map('GET', '/shop/api/removeItem/[i:id]', 'ShopController#removeItem', 'Remove item');
 
 $match = $router->match();
 

@@ -1,30 +1,25 @@
-const btn1 = document.querySelector('[data-item="1"]'),
-	  btn2 = document.querySelector('[data-item="2"]'),
-	  btn3 = document.querySelector('[data-item="3"]'),
-	  btn4 = document.querySelector('[data-item="4"]'),
-	  btn5 = document.querySelector('[data-item="5"]'),
-	  btn6 = document.querySelector('[data-item="6"]')
-
 const successPopup = document.querySelector('.success'),
 	  failPopup = document.querySelector('.failed')
 	
-let btns = [btn1, btn2, btn3, btn4, btn5, btn6]
+let btns = document.querySelectorAll('button');
 
-let addItemURL = "http://oceanstudios.test/public/shop/api/addItem/"
+let removeItemURL = "http://oceanstudios.test/public/shop/api/removeItem/"
 
 btns.forEach(btn => {
 	btn.addEventListener('click', () => {
-		let id = btn.dataset.item,
-			amount = `amount-${id}`,
-			size = `size-${id}`
+		if (!btn.dataset.id) return
 
-		amount = document.querySelector(`#${amount}`).value
+		let id = btn.dataset.id
 
-		if (parseInt(id) < 4) size = document.querySelector(`#${size}`).value
-		else size = 'null'
+		let amount = parseInt(document.querySelector(`#amount-${id}`).dataset.amount) - 1
 
-		makeAjaxCall(addItemURL, `${id}/${amount}/${size}`, "GET")
+		if (amount < 0) return
+
+		makeAjaxCall(removeItemURL, `${id}`, "GET")
 			.then(() => {
+				document.querySelector(`#amount-${id}`).dataset.amount = amount
+				document.querySelector(`#amount-${id}`).innerHTML = `x${amount}`
+
 				successPopup.style.display = "block"
 				successPopup.classList.add('active')
 				setTimeout(() => {
