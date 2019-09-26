@@ -3,9 +3,7 @@ require_once $CONFIG['PRIVATE'] . '/includes/functions.php';
 require_once $CONFIG['PRIVATE'] . '/models/model.php';
 
 if (session_status() == PHP_SESSION_NONE) session_start();
-if (!isset($_SESSION['cart'])) $_SESSION['cart'] = [];
-
-$Cart = new Cart();
+if (!isset($_SESSION['cart'])) $_SESSION['cart'] = new Cart();
 
 /**
  * Onderstaande code zorgt ervoor dat als we in onze code een controller willen gebruiken bijv:

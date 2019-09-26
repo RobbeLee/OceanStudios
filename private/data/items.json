@@ -1,35 +1,45 @@
-{
-	"1": {
-		"name": "",
-		"price": 10,
-		"in_stock": 0,
-		"sizes": ["XS", "S", "M", "L", "XL"]
+[
+	{
+	  "code": 1,
+	  "title": "Ocean Studios T-Shirt",
+	  "image_url": "https://via.placeholder.com/200x400?text=wide%20boy",
+	  "price": 35.00,
+	  "sizes": ["XS", "S", "M", "L", "XL"],
+	  "type": "shirt"
 	},
-	"2": {
-		"name": "",
-		"price": 10,
-		"in_stock": 0,
-		"sizes": ["XS", "S", "M", "L", "XL"]
+	{
+	  "code": 2,
+	  "title": "Ocean Studios T-Shirt",
+	  "image_url": "https://via.placeholder.com/200x400?text=wide%20boy",
+	  "price": 35.00,
+	  "type": "shirt"
 	},
-	"3": {
-		"name": "",
-		"price": 10,
-		"in_stock": 0,
-		"sizes": ["XS", "S", "M", "L", "XL"]
+	{
+	  "code": 3,
+	  "title": "Ocean Studios T-Shirt",
+	  "image_url": "https://via.placeholder.com/200x400?text=wide%20boy",
+	  "price": 35.00,
+	  "type": "shirt"
 	},
-	"4": {
-		"name": "",
-		"price": 10,
-		"in_stock": 0
+	{
+	  "code": 4,
+	  "title": "Ocean Studios Socks",
+	  "image_url": "https://via.placeholder.com/200x400?text=wide%20boy",
+	  "price": 35.00,
+	  "type": "sock"
 	},
-	"5": {
-		"name": "",
-		"price": 10,
-		"in_stock": 0
+	{
+	  "code": 5,
+	  "title": "Ocean Studios Socks",
+	  "image_url": "https://via.placeholder.com/200x400?text=wide%20boy",
+	  "price": 35.00,
+	  "type": "sock"
 	},
-	"6": {
-		"name": "",
-		"price": 10,
-		"in_stock": 0
+	{
+	  "code": 6,
+	  "title": "Ocean Studios Socks",
+	  "image_url": "https://via.placeholder.com/200x400?text=wide%20boy",
+	  "price": 35.00,
+	  "type": "sock"
 	}
-}
+  ]
