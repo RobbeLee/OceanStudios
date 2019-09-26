@@ -28,7 +28,7 @@ Portfolio | Ocean Studios
 <div class="main__blauw">
     <div class="main__blauw--img">
         <!--   Place a screenshot of your website in the portfolio.css    -->
-        <img src="../../public/img/imageviewer.jpg" alt=" ">
+        <img src="/OceanStudios/public/img/imageviewer.jpg" alt=" ">
     </div>
     <div class="main__blauw--content">
         <!--    Your name    -->
@@ -48,7 +48,7 @@ Portfolio | Ocean Studios
 <div class="main__wit">
     <div class="main__wit--img">
         <!--   Place here a screenshot of your website    -->
-        <img src="../../public/img/OceanMobile.jpg" alt="">
+        <img src="/img/OceanMobile.jpg" alt="">
     </div>
     <div class="main__wit--content">
         <!--    Your name    -->
