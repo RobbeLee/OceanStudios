@@ -15,8 +15,8 @@ let addItemURL = "/shop/addItem?"
 btns.forEach(btn => {
 	btn.addEventListener('click', () => {
 		let id = btn.dataset.item,
-			amount = `${id}-amount`,
-			size = `${id}-size`
+			amount = `amount-${id}`,
+			size = `size-${id}`
 
 		amount = document.querySelector(`#${amount}`).value
 		size = document.querySelector(`#${size}`).value
