@@ -14,23 +14,16 @@ header {
     align-items: flex-end;
 }
 
-/* Making the font readable on mobile*/
-/*p{*/
-    /*font-weight: 500;*/
-    /*font-size: 18px;*/
-/*}*/
-/*a{*/
-    /*font-weight: bold;*/
-    /*font-size: 16px;*/
-/*}*/
 .header__body {
-    padding: 0 10px 0 20px;
+    padding: 0 80px 0 20px;
     background: #fff;
     margin-bottom: 50px;}
+
 .header__title {
     font-size: 40px;
     font-weight: 400;
     text-transform: capitalize;}
+
     .header__title--bold {
         font-weight: 800;
         font-style: italic;}
@@ -45,6 +38,7 @@ header {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 60px 20px;}
+
     .main__blauw:after{
         position: absolute;
         width: 100%;
@@ -58,6 +52,7 @@ header {
         z-index: 1;
         transform-origin: top left;
         transform: skewY(5deg);}
+
         .main__blauw--img{
             position: relative;
             width: 290px;
@@ -68,11 +63,11 @@ header {
             background-size: cover;
             margin: auto;
             z-index: 2;}
+
         .main__blauw--content{
             margin: auto;
             position: relative;
             width: 290px;
-            height: 100px;
             z-index: 2;}
 
 .main__wit{
@@ -84,6 +79,7 @@ header {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 60px 20px;}
+
     .main__wit:after{
         position: absolute;
         width: 100%;
@@ -97,21 +93,22 @@ header {
         z-index: 2;
         transform-origin: top left;
         transform: skewY(5deg);}
+
         .main__wit--img{
             position: relative;
             width: 290px;
             height: 486px;
-            background: url(../img/OceanMobile.jpg);
+            background: url(../img/imageviewer.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
             margin: auto;
             z-index: 3;}
+
         .main__wit--content{
             margin: auto;
             position: relative;
             width: 290px;
-            height: 100px;
             z-index: 3;}
         
 /*@media screen and (min-width: 768px) {*/
@@ -197,15 +194,16 @@ header {
     .main__blauw {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(4, 30vh);
+        grid-template-rows: repeat(4, 20vh);
         position: relative;
         background-color: #219A94;
-        height: 979px;
+        height: 700px;
         width: 100%;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;}
         /*padding: 60px 20px;}*/
+
         .main__blauw:after {
             position: absolute;
             width: 100%;
@@ -219,31 +217,39 @@ header {
             z-index: 1;
             transform-origin: top left;
             transform: skewY(3deg);}
+
             .main__blauw--img {
                 grid-column: 1/4;
                 grid-row: 1/5;
+                height: 289px;
+                width: 500px;
                 margin: auto;
-                background: url(../img/OceanMobile.jpg);
+                background: url(../img/imageviewer.jpg);
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;
                 z-index: 2;}
+
+
             .main__blauw--content {
                 grid-column: 4/7;
-                grid-row: 2/5;
+                grid-row: 1/5;
                 z-index: 2;
-                margin: 0 20px;}
+                width: auto;
+                margin: 5em 20px;}
+
         .main__wit {
             display: grid;
             grid-template-columns: repeat(6, 1fr);
-            grid-template-rows: repeat(4, 30vh);
+            grid-template-rows: repeat(4, 20vh);
             position: relative;
             background-color: white;
-            height: 979px;
+            height: 700px;
             width: 100%;
             -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
             box-sizing: border-box;}
+
             .main__wit:after {
                 position: absolute;
                 width: 100%;
@@ -257,6 +263,7 @@ header {
                 z-index: 2;
                 transform-origin: top left;
                 transform: skewY(3deg);}
+
                 .main__wit--img {
                     grid-column: 4/7;
                     grid-row: 1/5;
@@ -266,11 +273,12 @@ header {
                     background-position: center;
                     background-size: cover;
                     z-index: 3;}
+
                 .main__wit--content {
                     grid-column: 2/4;
-                    grid-row: 2/5;
+                    grid-row: 1/5;
                     z-index: 3;
-                    margin: 0 20px;}
+                    margin: 5em 20px;}
 
         }
 
