@@ -23,7 +23,7 @@ Shop | Ocean Studios
     <p class="statusPoppup__text">Something went wrong.</p>
 </div>
 
-<h2 class="item__swoosh title"> <img src="../img/swoosh.png" alt="loes" class="title__img"> T-shirts</h2>
+<h2 class="item__swoosh title"> <img src="./img/swoosh.png" alt="loes" class="title__img"> T-shirts</h2>
 <div class="items shirts">
     <div class="item">
         <div class="item__img--container"> 
@@ -34,7 +34,7 @@ Shop | Ocean Studios
                 <h3 class="item__title">Ocean T-shirt</h3>
                 <span class="item__price">€35,00</span>
                 <div class="select-container">
-                    <select class="item__amount" id="1-amount">
+                    <select class="item__amount" id="amount-1">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -44,7 +44,7 @@ Shop | Ocean Studios
                     <svg viewBox="0 0 20 10"><path d="M0,2 10,10 20,2 18,0 10,6 2,0"/></svg>
                 </div>
                 <div class="select-container">
-                    <select class="item__size" id="1-size">
+                    <select class="item__size" id="size-1">
                         <option value="xs">XS</option>
                         <option value="s">S</option>
                         <option value="m">M</option>
@@ -53,7 +53,7 @@ Shop | Ocean Studios
                     </select>
                     <svg viewBox="0 0 20 10"><path d="M0,2 10,10 20,2 18,0 10,6 2,0"/></svg>
                 </div>
-                <button data-item="1" class="item__btn"><img src="../img/witte-swoosh.png" alt="loes" class="item__btn--img"> Bestel nu</button>
+                <button data-item="1" class="item__btn"><img src="./img/witte-swoosh.png" alt="loes" class="item__btn--img"> Bestel nu</button>
             </div>
         </div>
     </div>
@@ -66,7 +66,7 @@ Shop | Ocean Studios
                 <h3 class="item__title">Ocean T-shirt</h3>
                 <span class="item__price">€35,00</span>
                 <div class="select-container">
-                    <select class="item__amount" id="2-amount">
+                    <select class="item__amount" id="amount-2">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -76,7 +76,7 @@ Shop | Ocean Studios
                     <svg viewBox="0 0 20 10"><path d="M0,2 10,10 20,2 18,0 10,6 2,0"/></svg>
                 </div>
                 <div class="select-container">
-                    <select class="item__size" id="2-amount">
+                    <select class="item__size" id="size-2">
                         <option value="xs">XS</option>
                         <option value="s">S</option>
                         <option value="m">M</option>
@@ -85,7 +85,7 @@ Shop | Ocean Studios
                     </select>
                     <svg viewBox="0 0 20 10"><path d="M0,2 10,10 20,2 18,0 10,6 2,0"/></svg>
                 </div>
-                <button data-item="2" class="item__btn"><img src="../img/witte-swoosh.png" alt="loes" class="item__btn--img"> Bestel nu</button>
+                <button data-item="2" class="item__btn"><img src="./img/witte-swoosh.png" alt="loes" class="item__btn--img"> Bestel nu</button>
             </div>
         </div>
     </div>
@@ -98,7 +98,7 @@ Shop | Ocean Studios
                 <h3 class="item__title">Ocean T-shirt</h3>
                 <span class="item__price">€35,00</span>
                 <div class="select-container">
-                    <select class="item__amount" id="3-amount">
+                    <select class="item__amount" id="amount-3">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -108,7 +108,7 @@ Shop | Ocean Studios
                     <svg viewBox="0 0 20 10"><path d="M0,2 10,10 20,2 18,0 10,6 2,0"/></svg>
                 </div>
                 <div class="select-container">
-                    <select class="item__size" id="3-amount">
+                    <select class="item__size" id="size-3">
                         <option value="xs">XS</option>
                         <option value="s">S</option>
                         <option value="m">M</option>
@@ -117,12 +117,12 @@ Shop | Ocean Studios
                     </select>
                     <svg viewBox="0 0 20 10"><path d="M0,2 10,10 20,2 18,0 10,6 2,0"/></svg>
                 </div>
-                <button data-item="3" class="item__btn"><img src="../img/witte-swoosh.png" alt="loes" class="item__btn--img"> Bestel nu</button>
+                <button data-item="3" class="item__btn"><img src="./img/witte-swoosh.png" alt="loes" class="item__btn--img"> Bestel nu</button>
             </div>
         </div>
     </div>
 </div>
-<h2 class="item__swoosh title"><img src="../img/swoosh.png" alt="loes" class="title__img">Sokken</h2>
+<h2 class="item__swoosh title"><img src="./img/swoosh.png" alt="loes" class="title__img">Sokken</h2>
 <div class="items sokken">
     <div class="item">
         <div class="item__img--container">
@@ -133,7 +133,7 @@ Shop | Ocean Studios
                 <h3 class="item__title">Ocean sokken</h3>
                 <span class="item__price">€35,00</span>
                 <div class="select-container">
-                    <select class="item__amount" id="4-amount">
+                    <select class="item__amount" id="amount-4">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -142,7 +142,7 @@ Shop | Ocean Studios
                     </select>
                     <svg viewBox="0 0 20 10"><path d="M0,2 10,10 20,2 18,0 10,6 2,0"/></svg>
                 </div>
-                <button data-item="4" class="item__btn"><img src="../img/witte-swoosh.png" alt="loes" class="item__btn--img"> Bestel nu</button>
+                <button data-item="4" class="item__btn"><img src="./img/witte-swoosh.png" alt="loes" class="item__btn--img"> Bestel nu</button>
             </div>
         </div>
     </div>
@@ -155,7 +155,7 @@ Shop | Ocean Studios
                 <h3 class="item__title">Ocean sokken</h3>
                 <span class="item__price">€35,00</span>
                 <div class="select-container">
-                    <select class="item__amount" id="5-amount">
+                    <select class="item__amount" id="amount-5">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -164,7 +164,7 @@ Shop | Ocean Studios
                     </select>
                     <svg viewBox="0 0 20 10"><path d="M0,2 10,10 20,2 18,0 10,6 2,0"/></svg>
                 </div>
-                <button data-item="5" class="item__btn"><img src="../img/witte-swoosh.png" alt="loes" class="item__btn--img"> Bestel nu</button>
+                <button data-item="5" class="item__btn"><img src="./img/witte-swoosh.png" alt="loes" class="item__btn--img"> Bestel nu</button>
             </div>
         </div>
     </div>
@@ -177,7 +177,7 @@ Shop | Ocean Studios
                 <h3 class="item__title">Ocean sokken</h3>
                 <span class="item__price">€35,00</span>
                 <div class="select-container">
-                    <select class="item__amount" id="6-amount">
+                    <select class="item__amount" id="amount-6">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -186,12 +186,12 @@ Shop | Ocean Studios
                     </select>
                     <svg viewBox="0 0 20 10"><path d="M0,2 10,10 20,2 18,0 10,6 2,0"/></svg>
                 </div>
-                <button data-item="6" class="item__btn"><img src="../img/witte-swoosh.png" alt="loes" class="item__btn--img"> Bestel nu</button>
+                <button data-item="6" class="item__btn"><img src="./img/witte-swoosh.png" alt="loes" class="item__btn--img"> Bestel nu</button>
             </div>
         </div>
     </div>
 </div>
 
-<script src="<?php echo url('js/shop.js') ?>"></script>
+<script src="<?php echo url('OceanStudios/public/js/shop.js') ?>"></script>
 
 <!--https://via.placeholder.com/200x400 -->
