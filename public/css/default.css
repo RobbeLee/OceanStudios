@@ -385,6 +385,57 @@ button, input {
 
 button {
   cursor: pointer;
+  position: relative;
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  background: transparent;
+  border: 5px solid #219A94;
+  border-radius: 2px;
+  -webkit-transition: opacity 0s ease, -webkit-transform 0s ease;
+  transition: opacity 0s ease, -webkit-transform 0s ease;
+  transition: transform 0s ease, opacity 0s ease;
+  transition: transform 0s ease, opacity 0s ease, -webkit-transform 0s ease;
+}
+
+button:hover::before, button:focus::before {
+  -webkit-animation: pulse 800ms infinite;
+          animation: pulse 800ms infinite;
+  -webkit-transition: opacity 400ms ease, -webkit-transform 400ms ease;
+  transition: opacity 400ms ease, -webkit-transform 400ms ease;
+  transition: transform 400ms ease, opacity 400ms ease;
+  transition: transform 400ms ease, opacity 400ms ease, -webkit-transform 400ms ease;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.2, 1.6);
+            transform: scale(1.2, 1.6);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.2, 1.6);
+            transform: scale(1.2, 1.6);
+    opacity: 0;
+  }
 }
 
 textarea {
@@ -628,3 +679,86 @@ header::after {
   z-index: 1;
 }
 /*# sourceMappingURL=default.css.map */
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #219A94;
+  text-decoration: #fff;
+  font-size: 1.25rem;
+}
+  .footer__map {
+    width: 100%;
+  }
+
+  .contact {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+    color: #fff;
+    padding-top: 10px;
+  }
+
+    .contact__h2 {
+      position: relative;
+      width: min-content;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+    }
+      .contact__h2::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 90%;
+        height: 1px;
+        background: #fff;
+      }
+
+    .contact__times, .contact__loc {
+      font-weight: 300;
+      margin-bottom: 5px;
+      font-size: 1.25rem;
+    }
+    
+    .contact__tel, .contact__mail {
+      color: #fff;
+      text-decoration: underline;
+      margin-bottom: 5px;
+    }
+  
+  .service {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+    color: #fff;
+    padding-top: 10px;
+  }
+    .service__h2 {
+      position: relative;
+      width: min-content;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+    }
+      .service__h2::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 90%;
+        height: 1px;
+        background: #fff;
+      }
+  .service__a {
+    color: #fff;
+    text-decoration: underline;
+    margin-bottom: 5px;
+  }
