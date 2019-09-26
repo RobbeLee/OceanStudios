@@ -64,23 +64,23 @@ Ocean Studios
             <a href="#" class="intermission__main--content-2-button-3">
                 <img src="img/globe-hand.png" alt="" class="intermission__main--content-2-img">
                 <hr>
-                <p class="intermission__main--content-2-p">
+                <h3 class="intermission__main--content-2-p">
                     Duurzaamheid
-                </p>
+                </h3>
             </a>
             <a href="#" class="intermission__main--content-2-button-4">
                 <img src="img/pen-ruler.png" alt="" class="intermission__main--content-2-img">
                 <hr>
-                <p class="intermission__main--content-2-p">
+                <h3 class="intermission__main--content-2-p">
                     Creativiteit
-                </p>
+                </h3>
             </a>
             <a href="#" class="intermission__main--content-2-button-5">
                 <img src="img/pc.png" alt="" class="intermission__main--content-2-img">
                 <hr>
-                <p class="intermission__main--content-2-p">
+                <h3 class="intermission__main--content-2-p">
                     Fashion / webdesign
-                </p>
+                </h3>
             </a>
         </div>
     </div>

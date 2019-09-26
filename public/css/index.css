@@ -10,11 +10,12 @@ main {
     flex-direction: column;
 }
 
-hr {
-    margin-top: 20px;
-}
+hr {margin-top: 20px;}
 
-iframe {width: 100vw;
+iframe {width: 100vw;}
+a {
+    text-decoration: none;
+    color: black;
 }
 /* ----------------------   Banner Start    ---------------------- */
 header {
@@ -186,7 +187,7 @@ header {
 }
 .webshop__main--content {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     text-align: center;}
 .webshop__main--content-left {
     background-color: var(--link-active);
@@ -211,8 +212,16 @@ header {
 /*  ----------------------   Webshop  End    ---------------------- */
 
 @media screen and (min-width: 750px) {
+    p {
+        line-height: 1.5em;
+        font-size: 26px;
+    }
     /*  ----------------------   Aboutus  End    ---------------------- */
     .aboutus__main--section-right {
+    }
+
+    .intermission__main--content {
+        padding: 4em;
     }
     /*  ----------------------   Aboutus  End    ---------------------- */
 }
@@ -251,16 +260,11 @@ header {
     .aboutus__main--img-right {
         width: 10%;
     }
-    .aboutus__main--p {
-        font-weight: 300;
-        font-size: 18px;
-    }
     /* ----------------------   Aboutus End    ----------------------  */
 
     /* ----------------------   intermission 1 Start    ---------------------- */
     .intermission__main {
         height: 30vh;
-        padding-bottom: 20px;
     }
     .intermission__main--content {
         display: grid;
