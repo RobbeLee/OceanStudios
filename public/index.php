@@ -22,6 +22,7 @@ $router->setBasePath('/OceanStudios/public');
 $router->map('GET', '/', 'HomeController#index', 'Home page');
 $router->map('GET', '/portfolio', 'HomeController#portfolio', 'Portfolio page');
 $router->map('GET', '/contact', 'ContactController#index', 'Contact page');
+$router->map('GET', '/terms', 'TermsController#terms', 'Terms and services page');
 
 // Web shop
 $router->map('GET', '/shop', 'ShopController#index', 'Webshop Index');

@@ -20,7 +20,7 @@ Ocean Studios
         <div class="aboutus__main--content">
             <h2 class="aboutus__main--h2">Wie zijn wij</h2>
             <div class="aboutus__main--section-left">
-                <img src="img/deep-sea.png" alt="free realestate" class="aboutus__main--img-left">
+                <img src="img/us.png" alt="free realestate" class="aboutus__main--img-left">
             </div>
             <div class="aboutus__main--section-right">
                 <p class="aboutus__main--p">
